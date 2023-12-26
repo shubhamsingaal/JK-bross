@@ -62,10 +62,14 @@
 }
 
 .scrollbar-style::-webkit-scrollbar-track {
-  background-color: #f1f1f1; /* Color of the scrollbar track */
+  background-color: #C8D4FF; /* Color of the scrollbar track */
 }
 
 /* Apply the global scrollbar style to your Review-wrapper */
 .Review-wrapper {
   /* Add other styles for the Review-wrapper if needed */
+}
+
+.select-none {
+  user-select: none;
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { GenerateQuotation, LandingPageNav, MapView, ServicesCards, Reviews } from '../components'
+import { GenerateQuotation, LandingPageNav, MapView, ServicesCards, Reviews, Questions } from '../components'
 import HeroLandingPage from "../assets/heroLandingPage.png"
 
 const LandingPage = () => {
@@ -23,6 +23,8 @@ const LandingPage = () => {
         </div> */}
             <MapView />
             <Reviews />
+            <Questions />
+            
     </div>
   )
 }
