@@ -1,0 +1,59 @@
+import React from 'react'
+import IndiaMap from '../assets/india-map.png'
+const MapView = () => {
+  return (
+    <div
+        className='bg-primary w-[100svw] py-[10rem] flex items-center justify-center'
+    >
+
+        <div className='w-[65svw] h-[120svh] bg-[#7F9CFF] rounded-3xl'>
+
+            <div className='h-[30%] flex items-center justify-evenly pt-10'>
+
+                <div className='h-[80%]'>
+                    <h1 className="text-3xl text-white">
+                        10+
+                    </h1>
+                    <p className="text-[#DBE3FF] text-xl text-center">
+                        Cities
+                    </p>
+                </div>
+
+                <div className='h-[80%]'>
+                    <h1 className="text-3xl text-white">
+                        5 lakh+
+                    </h1>
+                    <p className="text-[#DBE3FF] text-xl text-center">
+                        Driver Partners
+                    </p>
+                </div>
+
+                <div className='h-[80%]'>
+                    <h1 className="text-3xl text-white">
+                        1 Crore+
+                    </h1>
+                    <p className="text-[#DBE3FF] text-xl text-center">
+                        Customers
+                    </p>
+                </div>
+
+                <div className='h-[80%]'>
+                    <h1 className="text-3xl text-white">
+                        10 Crore+
+                    </h1>
+                    <p className="text-[#DBE3FF] text-xl text-center">
+                        Trips
+                    </p>
+                </div>
+            </div>
+
+            <div className='h-[70%] m-auto flex justify-center pb-[2rem]'>
+                <img 
+                    src={IndiaMap} className='h-[100%]'/>
+            </div>
+        </div>
+    </div>
+  )
+}
+
+export default MapView
