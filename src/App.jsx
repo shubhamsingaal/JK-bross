@@ -4,7 +4,7 @@ function App() {
 
   return (
     <div>
-    <h1 className="text-3xl font-bold underline bg-red-500">
+    <h1 className="text-3xl font-bold underline bg-primary">
         Test Tailwind
     </h1>
       
