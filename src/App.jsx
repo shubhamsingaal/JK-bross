@@ -5,7 +5,7 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import { LandingPage } from './pages';
+import { LandingPage, SignUp, VerificationScreen } from './pages';
 
 function App() {
 
@@ -55,8 +55,8 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />
-      {/* <Route path="/verification-screen" element={<VerificationScreen />} /> */}
-      {/* <Route path="/loginsignup" element={<LoginSignup />} /> */}
+      <Route path="/verification-screen" element={<VerificationScreen />} />
+      <Route path="/loginsignup" element={<SignUp />} />
     </Routes>
   )
 }
