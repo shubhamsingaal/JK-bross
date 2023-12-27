@@ -1,0 +1,56 @@
+/* AccountTwo.css */
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.small-input-field {
+    width: 80px;
+    /* Adjust as needed */
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    width: 100%;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    bottom: 15px;
+    bottom: -110px;
+}
+
+
+.margin-container {
+    margin: 30px;
+    /* Adjust the margin size as needed */
+}
+
+.container {
+    padding: 15px;
+    /* Adjust the padding to make the container smaller */
+}
+
+.mb-4>* {
+    margin-bottom: 10px;
+    /* Add margin between input fields and select */
+}
+
+.flex.mb-2>* {
+    margin-right: 10px;
+    /* Add margin between the small input fields */
+}
+
+
+
+/* Add more styles or adjust existing styles as needed */
