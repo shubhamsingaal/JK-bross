@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import LogoGoogle from '../assets/icon--google@2x.png';
 import LogoFacebook from '../assets/vector@2x.png';
-import welcome from '../assets/welcome.png'
-import frame from '../assets/Frame.png'
+import welcome from '../assets/welcome.png';
+import frame from '../assets/Frame.png';
 
-const SignupSection2 = () => {
+const SignupTwo = () => {
     const [phoneNumber, setPhoneNumber] = useState('');
     const [selectedCountryCode, setSelectedCountryCode] = useState('');
 
@@ -29,7 +29,7 @@ const SignupSection2 = () => {
     };
 
     return (
-        <div className='flex-1 bg-gray-200 p-8'>
+        <div className='flex-1 bg-gray-200 p-11'>
             <div className='container mx-auto bg-white p-6 rounded-md h-full'>
                 <img src={welcome} alt='Logo' className='mx-5 mb-10' />
                 <h4 className='mb-2 font-semibold'>Create a new account</h4>
@@ -52,15 +52,15 @@ const SignupSection2 = () => {
                         className='flex-1 p-2 border bg-gray-50 border-gray-300 rounded-r-md ml-1'
                     />
                 </div>
-                <button onClick={handleNextClick} className='w-full bg-blue-500 text-white p-2 mb-12 rounded-md'>
+                <button onClick={handleNextClick} className='w-full bg-blue-500 text-white p-2 mb-12 rounded-md hover:bg-blue-600 transition duration-300'>
                     Next
                 </button>
                 <img src={frame} className='mx-auto mb-12' alt="" />
-                <button onClick={handleGoogleLogin} className='w-full bg-gray-50 text-zinc-800 p-2 mb-2 rounded-md flex items-center justify-center'>
+                <button onClick={handleGoogleLogin} className='w-full bg-gray-50 text-zinc-800 p-2 mb-2 rounded-md flex items-center justify-center hover:bg-gray-100 transition duration-300'>
                     <img src={LogoGoogle} className='mr-10' alt="" />
                     Login with Google
                 </button>
-                <button onClick={handleFacebookLogin} className='w-full bg-gray-50 text-zinc-800 p-2 rounded-md flex items-center justify-center'>
+                <button onClick={handleFacebookLogin} className='w-full bg-gray-50 text-zinc-800 p-2 rounded-md flex items-center justify-center hover:bg-gray-100 transition duration-300'>
                     <img src={LogoFacebook} className='mr-10' alt="" />
                     Login with Facebook
                 </button>
@@ -69,4 +69,4 @@ const SignupSection2 = () => {
     );
 };
 
-export default SignupSection2;
+export default SignupTwo;

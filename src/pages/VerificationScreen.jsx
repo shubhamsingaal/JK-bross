@@ -1,8 +1,18 @@
 import React from 'react'
+import VerificationOne from '../components/VerificationOne';
+import VerificationTwo from '../components/VerificationTwo';
 
 const VerificationScreen = () => {
   return (
-    <div>VerificationScreen</div>
+
+    <div className='flex '>
+
+      <VerificationOne />
+      <VerificationTwo />
+
+
+    </div>
+
   )
 }
 
