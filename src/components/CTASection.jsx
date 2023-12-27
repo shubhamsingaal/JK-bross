@@ -16,24 +16,24 @@ const CTASection = () => {
             
             <div className='w-[100%] flex gap-x-4 md:flex-row flex-col md:items-start items-center'>
 
-                <div className='flex flex-wrap gap-2 md:gap-6 w-[65%] md:items-center items-center justify-center md:justify-start md:mt-16'>
+                <div className='flex flex-wrap gap-2 md:gap-4 w-[65%] md:items-center items-center justify-center md:justify-start md:mt-16'>
 
-                    <div className='bg-[#F5F7FE] min-w-[6rem] max-h-[14rem] p-6 border-2 border-[#DBE3FF] rounded-3xl'>
+                    <div className='bg-[#F5F7FE] min-w-[6rem] max-h-[14rem] p-6 border-2 border-[#DBE3FF] rounded-3xl cursor-pointer hover:bg-[#D8E3FF] transition'>
                         <img src={twoWheeler} className=''/>
                         <h1 className='m-auto w-full text-center py-[1rem] font-semibold text-textPrimary'>Two Wheelers</h1>
                     </div>
 
-                    <div className='bg-[#F5F7FE] min-w-[6rem] max-h-[14rem] p-6 border-2 border-[#DBE3FF] rounded-3xl'>
+                    <div className='bg-[#F5F7FE] min-w-[6rem] max-h-[14rem] p-6 border-2 border-[#DBE3FF] rounded-3xl cursor-pointer hover:bg-[#D8E3FF] transition'>
                         <img src={trucks} className=''/>
                         <h1 className='m-auto w-full text-center py-[1rem] font-semibold text-textPrimary'>Two Wheelers</h1>
                     </div>
 
-                    <div className='bg-[#F5F7FE] min-w-[6rem] max-h-[14rem] p-6  border-2 border-[#DBE3FF] rounded-3xl'>
+                    <div className='bg-[#F5F7FE] min-w-[6rem] max-h-[14rem] p-6  border-2 border-[#DBE3FF] rounded-3xl cursor-pointer hover:bg-[#D8E3FF] transition'>
                         <img src={packersMovers} className=''/>
                         <h1 className='m-auto w-full text-center py-[1rem] font-semibold text-textPrimary'>Two Wheelers</h1>
                     </div>
 
-                    <div className='bg-[#F5F7FE] min-w-[6rem] max-h-[14rem] p-6  border-2 border-[#DBE3FF] rounded-3xl'>
+                    <div className='bg-[#F5F7FE] min-w-[6rem] max-h-[14rem] p-6  border-2 border-[#DBE3FF] rounded-3xl cursor-pointer hover:bg-[#D8E3FF] transition'>
                         <img src={intercity} className=''/>
                         <h1 className='m-auto w-full text-center py-[1rem] font-semibold text-textPrimary'>Two Wheelers</h1>
                     </div>
