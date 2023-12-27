@@ -1,6 +1,6 @@
 import React from 'react'
 import { GenerateQuotation, LandingPageNav, MapView, ServicesCards, Reviews, Questions, Footer } from '../components'
-import HeroLandingPage from "../../public/assets/heroLandingPage.png"
+import HeroLandingPage from "/assets/heroLandingPage.png"
 
 const LandingPage = () => {
   return (

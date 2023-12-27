@@ -1,6 +1,6 @@
 import React from 'react'
-import googlePlay from  '../../public/assets/googleplay2.png'
-import appstore from  '../../public/assets/appstore1.png'
+import googlePlay from  '/assets/googleplay2.png'
+import appstore from  '/assets/appstore1.png'
 
 const DownLoadCTA = () => {
   return (

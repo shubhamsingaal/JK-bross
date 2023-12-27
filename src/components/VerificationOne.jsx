@@ -1,7 +1,7 @@
 import React from 'react';
-import truck from '../../public/assets/truck.png';
-import logo from '../../public/assets/layer-12@2x.png';
-import dots from '../../public/assets/group-55@2x.png';
+import truck from '/assets/truck.png';
+import logo from '/assets/layer-12@2x.png';
+import dots from '/assets/group-55@2x.png';
 
 const VerificationOne = () => {
     return (

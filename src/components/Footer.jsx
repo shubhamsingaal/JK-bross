@@ -1,7 +1,7 @@
 import React from 'react'
-import footerLogo from "../../public/assets/footerJK-bro.png"
-import googlePlay from "../../public/assets/googleplay.png"
-import appStore from "../../public/assets/appstore.png"
+import footerLogo from "/assets/footerJK-bro.png"
+import googlePlay from "/assets/googleplay.png"
+import appStore from "/assets/appstore.png"
 import { Link } from 'react-router-dom'
 
 const footerLinksTop = [

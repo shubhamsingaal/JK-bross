@@ -1,9 +1,9 @@
 import React from 'react'
-import rightArrow from "../../public/assets/quotation-arrow.png"
-import cityTempo from "../../public/assets/city-tempo.png"
-import vehicleShifting from "../../public/assets/vehicle-shifting.png"
-import withinCity from "../../public/assets/within-city.png"
-import betweenCities from "../../public/assets/between-cities.png"
+import rightArrow from "/assets/quotation-arrow.png"
+import cityTempo from "/assets/city-tempo.png"
+import vehicleShifting from "/assets/vehicle-shifting.png"
+import withinCity from "/assets/within-city.png"
+import betweenCities from "/assets/between-cities.png"
 import { NavLink } from 'react-router-dom'
 import SelectCityDropdown from './SelectCityDropdown'
 

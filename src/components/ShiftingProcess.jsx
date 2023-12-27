@@ -1,8 +1,8 @@
 import React from 'react'
-import mobileArt from "../../public/assets/MobileArt.svg"
-import mobileFrame from "../../public/assets/MobileFrame.png"
-import mobileText from "../../public/assets/MobileText.png"
-import mobileTitle from "../../public/assets/mobiletitle.png"
+// import mobileArt from "../../public/assets/mobileArt.svg"
+// import mobileFrame from "../../public/assets/MobileFrame.png"
+// import mobileText from "../../public/assets/MobileText.png"
+// import mobileTitle from "../../public/assets/mobiletitle.png"
 
 const ShiftingProcess = () => {
   return (
@@ -16,10 +16,10 @@ const ShiftingProcess = () => {
 
                 <div className='relative w-max mt-[2rem] mb-[2rem]'>
                     {/*TODO Need to replace below block with actual image instead of 4 differnet image, right now not able to export all together*/}
-                    <img src={mobileFrame} alt="mobileFrame"/>
-                    <img src={mobileArt} alt="mobileArt" className='absolute top-[30%] left-[15%]'/>
-                    <img src={mobileText} alt="mobileText" className='absolute top-[70%] left-[20%]'/>
-                    <img src={mobileTitle} alt="mobileTitle" className='absolute top-[60%] left-[20%]'/>
+                    {/* <img src={mobileFrame} alt="mobileFrame"/> */}
+                    {/* <img src={mobileArt} alt="mobileArt" className='absolute top-[30%] left-[15%]'/> */}
+                    {/* <img src={mobileText} alt="mobileText" className='absolute top-[70%] left-[20%]'/> */}
+                    {/* <img src={mobileTitle} alt="mobileTitle" className='absolute top-[60%] left-[20%]'/> */}
                 </div>
                 <p className='opacity-70'>Book Professional Packers and Movers! You'll be required to follow the given steps to experience the best house shifting services.</p>        
             </div>

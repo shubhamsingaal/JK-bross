@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import jkbLogo from '../../public/assets/jk-bro-logo.png'
+import jkbLogo from '/assets/jk-bro-logo.png'
 
 const LandingPageNav = () => {
   return (

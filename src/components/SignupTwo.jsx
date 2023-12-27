@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import LogoGoogle from '../../public/assets/icon--google@2x.png';
-import LogoFacebook from '../../public/assets/vector@2x.png';
-import frame from '../../public/assets/Frame.png';
+import LogoGoogle from '/assets/icon--google@2x.png';
+import LogoFacebook from '/assets/vector@2x.png';
+import frame from '/assets/Frame.png';
 
 const SignupTwo = () => {
     const [phoneNumber, setPhoneNumber] = useState('');
