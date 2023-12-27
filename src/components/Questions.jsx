@@ -84,7 +84,7 @@ const Questions = () => {
                 <p className='text-md text-[#DBE3FF]'>In case you have more questions, feel free to reach out to us</p>
             </div>
             <div className='w-[100%] border-b-2 border-dotted h-[0.01rem]'></div>
-        <Accordion data={faqData} />;
+        <Accordion data={faqData} />
         </div>
 
     </div>
