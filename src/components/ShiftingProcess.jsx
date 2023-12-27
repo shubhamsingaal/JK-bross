@@ -1,5 +1,5 @@
 import React from 'react'
-import mobileArt from "/assets/mobileArt.svg"
+// import mobileArt from "/assets/mobileArt.svg"
 import mobileFrame from "/assets/mobileFrame.png"
 import mobileText from "/assets/mobileText.png"
 import mobileTitle from "/assets/mobiletitle.png"
@@ -17,7 +17,7 @@ const ShiftingProcess = () => {
                 <div className='relative w-max mt-[2rem] mb-[2rem]'>
                     {/*TODO Need to replace below block with actual image instead of 4 differnet image, right now not able to export all together*/}
                     <img src={mobileFrame} alt="mobileFrame"/>
-                    <img src={mobileArt} alt="mobileArt" className='absolute top-[30%] left-[15%]'/>
+                    {/* <img src={mobileArt} alt="mobileArt" className='absolute top-[30%] left-[15%]'/> */}
                     <img src={mobileText} alt="mobileText" className='absolute top-[70%] left-[20%]'/>
                     <img src={mobileTitle} alt="mobileTitle" className='absolute top-[60%] left-[20%]'/>
                 </div>
