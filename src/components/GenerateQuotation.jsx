@@ -1,10 +1,11 @@
-import { Heart, MapPin } from '@phosphor-icons/react'
 import React from 'react'
-import rightArrow from "../assets/quotation-arrow.png"
-import cityTempo from "../assets/city-tempo.png"
-import vehicleShifting from "../assets/vehicle-shifting.png"
-import withinCity from "../assets/within-city.png"
-import betweenCities from "../assets/between-cities.png"
+import rightArrow from "/assets/quotation-arrow.png"
+import cityTempo from "/assets/city-tempo.png"
+import vehicleShifting from "/assets/vehicle-shifting.png"
+import withinCity from "/assets/within-city.png"
+import betweenCities from "/assets/between-cities.png"
+import { NavLink } from 'react-router-dom'
+import SelectCityDropdown from './SelectCityDropdown'
 
 const QuotationConfig = [
     {
@@ -32,20 +33,8 @@ const QuotationConfig = [
 const GenerateQuotation = () => {
   return (
     <div className='absolute h-full content-center md:h-[50svh] w-[70svw] top-[75%] left-[15svw] bg-[#DBE3FF]-[50%] rounded-3xl bg-white shadow-[0_0_100px_0_rgba(0,0,0,0.1)] shadow-[#4871FF] drop-shadow-4xl p-6 flex flex-col flex-wrap lg:flex-nowrap'>
-    
-        <div className='w-max p-2 rounded-3xl bg-[#F5F7FE]-200 flex gap-x-4 mb-4 border-2 border-[#DBE3FF]'>
-            <label className='flex gap-x-1 items-center'>
-                <MapPin color="#4871FF" weight="fill" size={20} />
-                City
-            </label>
-
-            <select name="location" id="location" className='rounded-3xl w-max border-2 border-[#DBE3FF] cursor-pointer px-2 font-semibold'>
-                <option value="volvo">Surat</option>
-                <option value="saab">Ahmedabad</option>
-                <option value="mercedes">Mumbai</option>
-                <option value="audi">Rajasthan</option>
-            </select>
-        </div>
+        
+        <SelectCityDropdown />
 
         <div className='flex gap-x-2 justify-normal md:justify-between relative'>
 
@@ -67,7 +56,9 @@ const GenerateQuotation = () => {
                 })}
             </div>
 
-            <div className='group w-[25%] h-[135%] bg-primary -mt-[6%] rounded-3xl p-10 hover:bg-primary-200 tranition'>
+            <NavLink
+                to="/home" 
+                className='group w-[25%] h-[135%] bg-primary -mt-[6%] rounded-3xl p-10 hover:bg-primary-200 tranition'>
                 <h1 className='text-3xl font-semibold text-white tracking-wide '>
                     Get Quotation
                 </h1>
@@ -78,7 +69,7 @@ const GenerateQuotation = () => {
                     </span>
                 </h1>
                 <img src={rightArrow} className='bottom-0 absolute'/>
-            </div>
+            </NavLink>
 
         </div>
 

@@ -1,5 +1,5 @@
 import './App.css'
-import { LandingPage, SignUp, VerificationScreen, AccountScreen } from './pages';
+import { Home, LandingPage, SignUp, VerificationScreen, AccountScreen } from './pages';
 import { BrowserRouter ,Route, Routes } from 'react-router-dom';
 
 
@@ -12,6 +12,7 @@ function App() {
         <Route path="/verification" element={<VerificationScreen />} />
         <Route path="/loginsignup" element={<SignUp />} />
         <Route path="/account" element={<AccountScreen />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
     </BrowserRouter>
   )

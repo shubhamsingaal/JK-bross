@@ -1,7 +1,7 @@
 import React from 'react';
-import cycle from '../assets/group@2x.png';
-import logo from '../assets/layer-12@2x.png';
-import dots from '../assets/group-55@2x.png';
+import cycle from '/assets/group@2x.png';
+import logo from '/assets/layer-12@2x.png';
+import dots from '/assets/group-55@2x.png';
 
 const SignupOne = () => {
     return (

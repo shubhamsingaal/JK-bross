@@ -5,13 +5,12 @@ import SignupThree from '../components/SignupThree';
 
 const SignUp = () => {
   return (
+
     <div className='flex '>
-      
       <SignupOne />
       <SignupTwo/>
+   </div>
 
-      
-    </div>
   );
 }
 

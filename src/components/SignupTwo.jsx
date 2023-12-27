@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import LogoGoogle from '../assets/icon--google@2x.png';
-import LogoFacebook from '../assets/vector@2x.png';
-import welcome from '../assets/welcome.png';
-import frame from '../assets/Frame.png';
+import LogoGoogle from '/assets/icon--google@2x.png';
+import LogoFacebook from '/assets/vector@2x.png';
+import frame from '/assets/Frame.png';
 
 const SignupTwo = () => {
     const [phoneNumber, setPhoneNumber] = useState('');
@@ -31,7 +30,7 @@ const SignupTwo = () => {
     return (
         <div className='flex-1 bg-gray-200 p-11'>
             <div className='container mx-auto bg-white p-6 rounded-md h-full'>
-                <img src={welcome} alt='Logo' className='mx-5 mb-10' />
+                <h1 className='text-3xl font-extrabold text-textPrimary font-serif'>Welcome</h1>
                 <h4 className='mb-2 font-semibold'>Create a new account</h4>
                 <p className='text-left mb-4 text-zinc-700'>With a valid number, you can access deliveries, and our other services.</p>
                 <div className='flex mb-4'>

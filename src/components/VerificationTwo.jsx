@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import verification from '../assets/Verification.png';
+import verification from '/assets/Verification.png';
 
 const VerificationTwo = () => {
     const [otp, setOtp] = useState(['', '', '', '']);

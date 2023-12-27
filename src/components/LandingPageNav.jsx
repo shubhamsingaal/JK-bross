@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import jkbLogo from '../assets/jk-bro-logo.png'
+import jkbLogo from '/assets/jk-bro-logo.png'
 
 const LandingPageNav = () => {
   return (
@@ -10,7 +10,7 @@ const LandingPageNav = () => {
         <div className="absolute w-[50svw] flex items-center justify-between">
           <NavLink to="/">
             <img src={jkbLogo} className='w-[5rem] ml-[10rem]'/>
-            </NavLink>
+          </NavLink>
 
           <NavLink to="/enterprise" className="mr-[1rem] hover:font-semibold transition">  
             For Enterprise

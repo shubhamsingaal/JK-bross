@@ -1,5 +1,5 @@
 import React from 'react'
-import IndiaMap from '../assets/india-map.png'
+import IndiaMap from '/assets/india-map.png'
 const MapView = () => {
   return (
     <div

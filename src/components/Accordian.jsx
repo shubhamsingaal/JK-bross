@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Accordion = ({ data }) => {
+const Accordion = ({ data, invert }) => {
     const [activeIndex, setActiveIndex] = useState(null);
   
     const toggleAccordion = (index) => {
@@ -20,7 +20,7 @@ const Accordion = ({ data }) => {
                 activeIndex === index ? 'rotate-180' : ''
               }`}
               fill="none"
-              stroke="white"
+              stroke={invert ? '#262262' : "white"}
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -31,16 +31,18 @@ const Accordion = ({ data }) => {
                 d="M19 9l-7 7-7-7"
               ></path>
             </svg>
-            <h2 className="text-lg font-semibold text-white">{item.question}</h2>
+            <h2 className={`text-lg font-semibold ${invert ? 'text-textPrimary' : 'text-white' }`}>{item.question}</h2>
           </div>
           <div
             className={`px-14 mb-4 transition-all overflow-hidden ${
               activeIndex === index ? 'max-h-[500px]' : 'max-h-0'
             }`}
           >
-            <p className="text-gray-300">{item.answer}</p>
+            <p className={`${invert ? "text-[#262262]" : "text-gray-300"}`}>{item.answer}</p>
           </div>
-          <div className='w-[100%] border-b-2 border-dotted h-[0.01rem]'/>
+          
+          {index < data.length - 1  &&  <div className={`w-[100%] border-b-2 border-dotted h-[0.01rem] ${invert ? 'bg-[#D8E3FF]' : '' }`}/> }
+
         </div>
       ))}
       </div>
