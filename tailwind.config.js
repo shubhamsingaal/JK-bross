@@ -13,6 +13,8 @@ export default {
         "primary-200": "#77a9f0",
         "primary-100": "#a1c2fb",  // Lighter shade
         "primary-50": "#F0F8FF",  // Lighter shade
+        "textPrimary": "#262262",
+        "outline": "#DBE3FF"
       },
       fontFamily:{
         sans: ['sans-serif'],
