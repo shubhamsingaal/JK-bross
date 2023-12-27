@@ -3,7 +3,7 @@ import cycle from '../assets/group@2x.png';
 import logo from '../assets/layer-12@2x.png';
 import dots from '../assets/group-55@2x.png';
 
-const SignupSection1 = () => {
+const SignupOne = () => {
     return (
         <div className='flex-1 bg-white p-8 h-screen flex flex-col justify-center items-center'>
             {/* Logo Image */}
@@ -35,4 +35,4 @@ const SignupSection1 = () => {
     );
 };
 
-export default SignupSection1;
+export default SignupOne;

@@ -3,7 +3,7 @@ import truck from '../assets/truck.png';
 import logo from '../assets/layer-12@2x.png';
 import dots from '../assets/group-55@2x.png';
 
-const VerificationSection1 = () => {
+const VerificationOne = () => {
     return (
         <div className='flex-1 bg-white p-8 h-screen flex flex-col justify-center items-center'>
             {/* Logo Image */}
@@ -35,4 +35,4 @@ const VerificationSection1 = () => {
     );
 };
 
-export default VerificationSection1;
+export default VerificationOne;

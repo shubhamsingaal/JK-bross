@@ -1,14 +1,14 @@
 import React from 'react'
-import VerificationSection1 from '../components/VerificationSection1';
-import VerificationSection2 from '../components/VerificationSection2';
+import VerificationOne from '../components/VerificationOne';
+import VerificationTwo from '../components/VerificationTwo';
 
 const VerificationScreen = () => {
   return (
 
     <div className='flex '>
 
-      <VerificationSection1 />
-      <VerificationSection2 />
+      <VerificationOne />
+      <VerificationTwo />
 
 
     </div>

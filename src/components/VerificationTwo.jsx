@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import verification from '../assets/Verification.png';
 
-const VerificationSection2 = () => {
+const VerificationTwo = () => {
     const [otp, setOtp] = useState(['', '', '', '']);
     const inputRefs = useRef([
         React.createRef(),
@@ -98,4 +98,4 @@ const VerificationSection2 = () => {
     );
 };
 
-export default VerificationSection2;
+export default VerificationTwo;

@@ -1,14 +1,14 @@
 import React from 'react';
-import SignupSection1 from '../components/SignupSection1';
-import SignupSection2 from '../components/SignupSection2';
-import SignupSection3 from '../components/SignupSection3';
+import SignupOne from '../components/SignupOne';
+import SignupTwo from '../components/SignupTwo';
+import SignupThree from '../components/SignupThree';
 
 const SignUp = () => {
   return (
     <div className='flex '>
       
-      <SignupSection1 />
-      <SignupSection2/>
+      <SignupOne />
+      <SignupTwo/>
 
       
     </div>

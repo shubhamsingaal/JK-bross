@@ -4,7 +4,7 @@ import LogoFacebook from '../assets/vector@2x.png';
 import welcome from '../assets/welcome.png';
 import frame from '../assets/Frame.png';
 
-const SignupSection2 = () => {
+const SignupTwo = () => {
     const [phoneNumber, setPhoneNumber] = useState('');
     const [selectedCountryCode, setSelectedCountryCode] = useState('');
 
@@ -69,4 +69,4 @@ const SignupSection2 = () => {
     );
 };
 
-export default SignupSection2;
+export default SignupTwo;
