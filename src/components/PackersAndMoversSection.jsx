@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroLandingPage from "../assets/heroLandingPage.png"
+import HeroLandingPage from "../../public/assets/heroLandingPage.png"
 
 const PackersAndMoversSection = () => {
   return (

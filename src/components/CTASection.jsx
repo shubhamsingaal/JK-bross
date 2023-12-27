@@ -1,9 +1,9 @@
 import React from 'react'
 import SelectCityDropdown from './SelectCityDropdown'
-import twoWheeler from '../assets/two-wheeler.png'
-import trucks from "../assets/trucks.png"
-import packersMovers from "../assets/packers-movers.png" 
-import intercity from "../assets/intercity.png"
+import twoWheeler from '../../public/assets/two-wheeler.png'
+import trucks from "../../public/assets/trucks.png"
+import packersMovers from "../../public/assets/packers-movers.png" 
+import intercity from "../../public/assets/intercity.png"
 import { Calendar, MapPin } from '@phosphor-icons/react'
 
 const CTASection = () => {

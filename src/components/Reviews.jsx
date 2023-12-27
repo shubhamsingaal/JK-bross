@@ -1,5 +1,5 @@
 import React from 'react'
-import dummyProfile from "../assets/dummy-profile.png"
+import dummyProfile from "../../public/assets/dummy-profile.png"
 
 const Reviews = () => {
   return (

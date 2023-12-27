@@ -1,8 +1,8 @@
 import React from 'react'
-import mobileArt from "../assets/MobileArt.svg"
-import mobileFrame from "../assets/MobileFrame.png"
-import mobileText from "../assets/MobileText.png"
-import mobileTitle from "../assets/mobiletitle.png"
+import mobileArt from "../../public/assets/MobileArt.svg"
+import mobileFrame from "../../public/assets/MobileFrame.png"
+import mobileText from "../../public/assets/MobileText.png"
+import mobileTitle from "../../public/assets/mobiletitle.png"
 
 const ShiftingProcess = () => {
   return (

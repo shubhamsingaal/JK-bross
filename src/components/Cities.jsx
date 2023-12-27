@@ -1,14 +1,14 @@
 import React from 'react'
-import banglore from "../assets/banglore.png"
-import pune from "../assets/pune.png"
-import hyderabad from "../assets/hyderabad.png"
-import chennai from "../assets/chennai.png"
-import ahmedabad from "../assets/ahemdabad.png"
-import noida from "../assets/noida.png"
-import mumbai from "../assets/mumbai.png"
-import chandigarh from "../assets/chandigarh.png"
-import kolkata from "../assets/kolkata.png"
-import bhuwaneshwar from "../assets/bhuwaneshwar.png"
+import banglore from "../../public/assets/banglore.png"
+import pune from "../../public/assets/pune.png"
+import hyderabad from "../../public/assets/hyderabad.png"
+import chennai from "../../public/assets/chennai.png"
+import ahmedabad from "../../public/assets/ahemdabad.png"
+import noida from "../../public/assets/noida.png"
+import mumbai from "../../public/assets/mumbai.png"
+import chandigarh from "../../public/assets/chandigarh.png"
+import kolkata from "../../public/assets/kolkata.png"
+import bhuwaneshwar from "../../public/assets/bhuwaneshwar.png"
 
 const cities = [
     {
