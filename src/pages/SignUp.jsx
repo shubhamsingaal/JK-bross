@@ -11,9 +11,6 @@ const SignUp = () => {
       <SignupTwo/>
    </div>
 
-
-      
-    </div>
   );
 }
 

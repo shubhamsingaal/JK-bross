@@ -11,8 +11,6 @@ export { default as SignupThree } from "./SignupThree"
 export { default as VerificationSection1 } from "./VerificationOne"
 export { default as VerificationSection2 } from "./VerificationTwo"
 
-export { default as SignupSection1 } from "./SignupSection1"
-export { default as SignupSection2 } from "./SignupSection2"
 export { default as SelectCityDropdown } from "./SelectCityDropdown"
 export { default as HomeNav } from "./HomeNav"
 export { default as NavMenu } from "./NavMenu"
