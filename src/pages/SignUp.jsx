@@ -6,7 +6,7 @@ import SignupThree from '../components/SignupThree';
 const SignUp = () => {
   return (
 
-    <div className='flex '>
+    <div className='flex md:flex-row flex-col'>
       <SignupOne />
       <SignupTwo/>
    </div>
