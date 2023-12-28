@@ -44,7 +44,7 @@ const VerificationTwo = () => {
 
     return (
         <div className='flex-1 md:bg-gray-200 bg-white md:p-10  pt-1'>
-            <div className='container mx-auto md:mb-2 md:mt-2 md:mx-14 bg-white p-6  rounded-lg md:p-10 h-full w-auto'>
+            <div className='container  mx-auto md:mb-2 md:mt-2 xl:mx-14 bg-white p-6  rounded-lg md:p-10 h-full w-auto'>
                 <img src={verification} alt='Logo' className='mx-4 mb-7 mt-7' />
                 <div className='flex justify-between '>
                     <h4 className='mb-1 font-semibold'>+91 99999 99999</h4>
@@ -68,7 +68,7 @@ const VerificationTwo = () => {
                             value={value}
                             onChange={(e) => handleOtpChange(index, e.target.value)}
                             onKeyDown={(e) => handleKeyDown(index, e)}
-                            className='flex-1  bg-gray-5  ml-1 w-full p-2 border-2 border-[#D8E3FF] rounded-xl text-lg mb-6'
+                            className='flex-1  bg-gray-5  ml-1 w-1 h-auto p-2 border-2 border-[#D8E3FF] rounded-xl text-lg mb-6'
                             ref={inputRefs.current[index]}
                         />
                     ))}

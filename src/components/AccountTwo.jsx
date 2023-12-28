@@ -40,7 +40,7 @@ const AccountTwo = () => {
 
   return (
     <div className='flex-1 md:bg-gray-200 bg-white md:p-11 pt-1'>
-      <div className='container mx-auto md:mb-2 md:mt-2 md:mx-14 bg-white p-6  rounded-lg md:p-10 h-full w-auto'>
+      <div className='container mx-auto md:mb-2 md:mt-2 xl:mx-14 bg-white p-6  rounded-lg md:p-10 h-full w-auto'>
         <img src={account} alt='Logo' className='mx-5 mb-10' />
         <div className='mb-4'>
          
