@@ -98,7 +98,7 @@ const AccountTwo = () => {
             id='purpose'
             value={purpose}
             onChange={handlePurposeChange}
-            className='flex-1  bg-gray-5  ml-1 w-full p-2 border-2 border-[#D8E3FF] rounded-xl text-md mb-4'
+            className='flex-1  bg-gray-5  ml-1 w-full p-2 border-2 border-[#D8E3FF] rounded-xl text-sm mb-4'
           >
             <option value=''>Select</option>
             <option value='delivery'>Delivery</option>

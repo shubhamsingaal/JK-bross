@@ -39,17 +39,17 @@ const EmailVerify = () => {
                 </div>
                 <button
                     onClick={handleNextClick}
-                    className={`w-full mb-12 transition duration-300 text-lg rounded-3xl px-1 md:px-2 p-2 ${isEmailValid ? 'bg-primary  text-white hover:bg-blue-500' : 'bg-blue-200 text-white font-semibold cursor-not-allowed'}`}
+                    className={`w-full mb-12 md:mb-14 transition duration-300 text-lg rounded-3xl px-1 md:px-2 p-2 ${isEmailValid ? 'bg-primary  text-white hover:bg-blue-500' : 'bg-blue-200 text-white font-semibold cursor-not-allowed'}`}
                     disabled={!isEmailValid}
                 >
                     Verify
                 </button>
-                <img src={frame} className='mx-auto mt-24 mb-12' alt="" />
+                <img src={frame} className='mx-auto  mt-24 mb-12 md:mb-17' alt="" />
                 <button
                     onClick={handleGoogleLogin}
-                    className='w-full mt-5 mb-2 bg-gray-50 text-zinc-400 p-2 rounded-3xl flex items-center justify-center hover:bg-gray-200 transition duration-300'
+                    className='w-full mt-8 md:-mb-12 bg-gray-50 text-zinc-400 p-2 rounded-3xl flex items-center justify-center hover:bg-gray-200 transition duration-300'
                 >
-                    <img src={LogoGoogle} className='mr-10 h-6' alt="" />
+                    <img src={LogoGoogle} className='mr-8 h-6' alt="" />
                     Continue with Google
                 </button>
             </div>

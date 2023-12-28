@@ -5,7 +5,7 @@ import dots from '/assets/group-55@2x.png';
 
 const SignupOne = ({logoSrc}) => {
     return (
-        <div className='flex-1 bg-white md:p-8 pt-4 pb-1 h-screen flex flex-col justify-center items-center'>
+        <div className='flex-1 bg-gray-200 md:bg-white md:p-8 pt-4 pb-1 h-screen flex flex-col justify-center items-center'>
             {/* Logo Image */}
             <img
                 src={logoSrc}
@@ -27,8 +27,8 @@ const SignupOne = ({logoSrc}) => {
             />
 
             {/* Text Content */}
-            <p className="mb-4 text-center md:block hidden">
-                This is the first section of the page. You can add your content here.
+            <p className="mb-4 ml-12 mr-12 text-center text-sm  lg:mb-1 text-zinc-400 md:block hidden">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia doloremque labore harum ad, porro exercitationem. Similique saepe commodi quaerat odio?
             </p>
             {/* Add additional text content as needed */}
         </div>
