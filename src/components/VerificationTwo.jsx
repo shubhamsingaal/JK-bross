@@ -44,8 +44,8 @@ const VerificationTwo = () => {
 
     return (
         <div className='flex-1 md:bg-gray-200 bg-white md:p-11 pt-1'>
-            <div className='container sm:p-10 mx-auto md:mb-2 md:mt-2 xl:mx-14 bg-white p-6  rounded-lg md:p-10 h-full w-auto'>
-                <h1 className='text-3xl font-extrabold text-textPrimary font-serif mb-10'>Verification</h1>
+            <div className='container sm:p-10 mx-auto md:mb-2 md:mt-2 xl:mx-14 bg-white p-7  rounded-lg md:p-10 h-full w-auto'>
+                <h1 className='text-3xl font-extrabold text-textPrimary font-serif mb-8'>Verification</h1>
                 <div className='flex justify-between '>
                     <h4 className='mb-1 font-semibold'>+91 99999 99999</h4>
                     <button
