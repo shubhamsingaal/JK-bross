@@ -43,7 +43,7 @@ const VerificationTwo = () => {
     const isAllFieldsFilled = otp.every(value => value !== '');
 
     return (
-        <div className='flex-1 md:bg-gray-200  bg-white p-11'>
+        <div className='flex-1 md:bg-gray-200 bg-white md:p-11 pt-1'>
             <div className='container mx-auto bg-white p-6 rounded-md h-full'>
                 <img src={verification} alt='Logo' className='mx-4 mb-7 mt-7' />
                 <div className='flex justify-between '>
