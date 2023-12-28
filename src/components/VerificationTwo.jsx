@@ -68,7 +68,7 @@ const VerificationTwo = () => {
                             value={value}
                             onChange={(e) => handleOtpChange(index, e.target.value)}
                             onKeyDown={(e) => handleKeyDown(index, e)}
-                            className='w-1/4 p-2 border text-center border-gray-300 rounded-md mr-1 focus:outline-none focus:border-blue-500 focus:ring focus:border-blue-500'
+                            className='flex-1  bg-gray-5  ml-1 w-full p-2 border-2 border-[#D8E3FF] rounded-xl text-lg mb-6'
                             ref={inputRefs.current[index]}
                         />
                     ))}
@@ -87,7 +87,7 @@ const VerificationTwo = () => {
                     {/* Submit button at the bottom */}
                     <button
                         onClick={handleSubmit}
-                        className={`w-full p-2 mt-12 relative  -bottom-20 rounded-md transition duration-300 ${isAllFieldsFilled ? 'bg-blue-500 text-white hover:bg-blue-600' : 'bg-blue-100 text-gray-600 cursor-not-allowed'}`}
+                        className={`w-full p-2 mt-12 relative  -bottom-20 rounded-3xl transition duration-300 ${isAllFieldsFilled ? 'bg-blue-500 text-white hover:bg-blue-600' : 'bg-blue-100 text-gray-600 cursor-not-allowed '}`}
                         disabled={!isAllFieldsFilled}
                     >
                         Submit

@@ -37,7 +37,7 @@ const SignupTwo = () => {
                     <select
                         value={selectedCountryCode}
                         onChange={handleCountryCodeChange}
-                        className='p-2 border bg-gray-50 border-gray-300 rounded-l-md'
+                        className='  bg-gray-5  ml-1 p-2 border-2 border-[#D8E3FF] rounded-xl text-lg mb-6 '
                     >
                         <option value='+91'>+91</option>
                         <option value='+1'>+1</option>
@@ -48,18 +48,18 @@ const SignupTwo = () => {
                         placeholder='Mobile Number'
                         value={phoneNumber}
                         onChange={handlePhoneNumberChange}
-                        className='flex-1 p-2 border bg-gray-50 border-gray-300 rounded-r-md ml-1'
+                        className='flex-1  bg-gray-5  ml-1 w-full p-2 border-2 border-[#D8E3FF] rounded-xl text-lg mb-6'
                     />
                 </div>
-                <button onClick={handleNextClick} className='w-full bg-blue-500 text-white p-2 mb-12 rounded-md hover:bg-blue-600 transition duration-300'>
+                <button onClick={handleNextClick} className='w-full   mb-12 transition duration-300 bg-primary rounded-3xl px-1 md:px-2 text-white  p-2 hover:bg-blue-500'>
                     Next
                 </button>
                 <img src={frame} className='mx-auto mb-12' alt="" />
-                <button onClick={handleGoogleLogin} className='w-full bg-gray-50 text-zinc-800 p-2 mb-2 rounded-md flex items-center justify-center hover:bg-gray-100 transition duration-300'>
+                <button onClick={handleGoogleLogin} className='w-full bg-gray-50 text-zinc-800 p-2 mb-2 rounded-3xl flex items-center justify-center hover:bg-gray-100 transition duration-300'>
                     <img src={LogoGoogle} className='mr-10' alt="" />
                     Login with Google
                 </button>
-                <button onClick={handleFacebookLogin} className='w-full bg-gray-50 text-zinc-800 p-2 rounded-md flex items-center justify-center hover:bg-gray-100 transition duration-300'>
+                <button onClick={handleFacebookLogin} className='w-full bg-gray-50 text-zinc-800 p-2 rounded-3xl flex items-center justify-center hover:bg-gray-100 transition duration-300'>
                     <img src={LogoFacebook} className='mr-10' alt="" />
                     Login with Facebook
                 </button>
