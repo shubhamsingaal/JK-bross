@@ -1,11 +1,11 @@
 import React from 'react';
-import truck from '/assets/truck.png';
+import worker from '/assets/worker.png';
 import logo from '/assets/layer-12@2x.png';
 import dots from '/assets/group-55@2x.png';
 
-const VerificationOne = () => {
+const SignupOne = () => {
     return (
-        <div className='flex-1 bg-white md:p-8  pt-4 pb-1 h-screen flex flex-col justify-center items-center'>
+        <div className='flex-1 bg-white md:p-8 pt-4 pb-1 h-screen flex flex-col justify-center items-center'>
             {/* Logo Image */}
             <img
                 src={logo}
@@ -13,9 +13,9 @@ const VerificationOne = () => {
                 className="w-36 h-auto mb-8 md:mb-8 mt-16"
             />
 
-            {/* Truck Image */}
+            {/* Cycle Image */}
             <img
-                src={truck}
+                src={worker}
                 alt="Cycle Image"
                 className="w-64 h-auto mb-8 md:block hidden"
             />
@@ -35,4 +35,4 @@ const VerificationOne = () => {
     );
 };
 
-export default VerificationOne;
+export default SignupOne;

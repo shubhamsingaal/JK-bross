@@ -1,0 +1,51 @@
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.small-input-field {
+    width: 80px;
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    width: 100%;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    bottom: 15px;
+    bottom: -37px;
+}
+
+
+.margin-container {
+    margin: 30px;
+   
+}
+
+@media only screen and (max-width: 775px) {
+.submit-button {
+        width: 100%;
+        background-color: #3498db;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative;
+        bottom: -13px;
+    }
+}
+
+

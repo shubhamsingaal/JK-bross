@@ -43,8 +43,8 @@ const VerificationTwo = () => {
     const isAllFieldsFilled = otp.every(value => value !== '');
 
     return (
-        <div className='flex-1 md:bg-gray-200  bg-white p-11'>
-            <div className='container mx-auto bg-white p-6 rounded-md h-full'>
+        <div className='flex-1 md:bg-gray-200 bg-white md:p-10  pt-1'>
+            <div className='container  mx-auto md:mb-2 md:mt-2 xl:mx-14 bg-white p-6  rounded-lg md:p-10 h-full w-auto'>
                 <img src={verification} alt='Logo' className='mx-4 mb-7 mt-7' />
                 <div className='flex justify-between '>
                     <h4 className='mb-1 font-semibold'>+91 99999 99999</h4>
@@ -58,7 +58,7 @@ const VerificationTwo = () => {
                 <p className='text-left mb-12 text-zinc-700 text-sm'>
                     One Time Password (OTP) has been sent to this number.
                 </p>
-                <div className='flex mb-2'>
+                <div className='flex mb-2 justify-center'>
                     {/* Four small boxes for OTP verification */}
                     {otp.map((value, index) => (
                         <input
@@ -68,7 +68,7 @@ const VerificationTwo = () => {
                             value={value}
                             onChange={(e) => handleOtpChange(index, e.target.value)}
                             onKeyDown={(e) => handleKeyDown(index, e)}
-                            className='w-1/4 p-2 border text-center border-gray-300 rounded-md mr-1 focus:outline-none focus:border-blue-500 focus:ring focus:border-blue-500'
+                            className='flex-1  bg-gray-5  ml-1 w-1 h-auto p-2 border-2 border-[#D8E3FF] rounded-xl text-lg mb-6'
                             ref={inputRefs.current[index]}
                         />
                     ))}
@@ -87,7 +87,7 @@ const VerificationTwo = () => {
                     {/* Submit button at the bottom */}
                     <button
                         onClick={handleSubmit}
-                        className={`w-full p-2 mt-12 relative  -bottom-20 rounded-md transition duration-300 ${isAllFieldsFilled ? 'bg-blue-500 text-white hover:bg-blue-600' : 'bg-blue-100 text-gray-600 cursor-not-allowed'}`}
+                        className={`w-full p-2 mt-12 relative  -bottom-20 rounded-3xl transition duration-300 ${isAllFieldsFilled ? 'bg-blue-500 text-white hover:bg-blue-600' : 'bg-blue-100 text-gray-600 cursor-not-allowed '}`}
                         disabled={!isAllFieldsFilled}
                     >
                         Submit

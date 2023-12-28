@@ -1,0 +1,26 @@
+/* styles.css */
+
+.flex-container {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+/* AccountScreen.css */
+
+.flex-container {
+    display: flex;
+    height: 100vh;
+    /* Make the flex container cover the entire viewport height */
+}
+
+.flex-container>* {
+    flex: 1;
+    /* Make each child take equal width (half of the container) */
+}
+
+/* Additional styling if needed */
