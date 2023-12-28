@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import account from '/assets/Account.png';
-import '../css/AccountTwo.css';
+ import '../css/AccountTwo.css';
 
 const AccountTwo = () => {
   const [name, setName] = useState('');
@@ -37,8 +37,8 @@ const AccountTwo = () => {
   };
 
   return (
-    <div className='flex-1 bg-gray-200 p-11 mx-px my-py '>
-      <div className='container bg-white p-10 mb-12 rounded-lg h-full'>
+    <div className='flex-1 md:bg-gray-200 bg-white md:p-11 pt-1'>
+      <div className='container mx-auto bg-white p-6 rounded-md h-full'>
         <img src={account} alt='Logo' className='mx-5 mb-10' />
         <div className='mb-4'>
          
