@@ -5,7 +5,7 @@ import dots from '/assets/group-55@2x.png';
 
 const VerificationOne = () => {
     return (
-        <div className='flex-1 bg-white md:p-8 pt-4 pb-1 h-screen flex flex-col justify-center items-center'>
+        <div className='flex-1 bg-white md:p-8  pt-4 pb-1 h-screen flex flex-col justify-center items-center'>
             {/* Logo Image */}
             <img
                 src={logo}

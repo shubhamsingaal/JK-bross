@@ -29,7 +29,7 @@ const SignupTwo = () => {
 
     return (
         <div className='flex-1 md:bg-gray-200 bg-white md:p-11 pt-1'>
-            <div className='container mx-auto bg-white p-6 rounded-md h-full'>
+            <div className='container mx-auto md:mb-2 md:mt-2 md:mx-14 bg-white p-6  rounded-lg md:p-10 h-full w-auto'>
                 <h1 className='text-3xl font-extrabold text-textPrimary font-serif'>Welcome</h1>
                 <h4 className='mb-2 font-semibold'>Create a new account</h4>
                 <p className='text-left mb-4 text-zinc-700'>With a valid number, you can access deliveries, and our other services.</p>
