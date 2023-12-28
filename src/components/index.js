@@ -30,5 +30,6 @@ export { default as Cities } from "./Home/Cities"
 export { default as FAQs } from "./Home/FAQs"
 
 export { default as ProfileInfo } from "./Profile/ProfileInfo"
+export { default as EmailVerify} from "./Packers&Movers/EmailVerify"
 
 export { default as PSignupTwo} from "./Packers&Movers/PSignupTwo"

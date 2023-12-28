@@ -51,15 +51,15 @@ const SignupTwo = () => {
                         className='flex-1  bg-gray-5  ml-1 w-full p-2 border-2 border-[#D8E3FF] rounded-xl text-lg mb-6'
                     />
                 </div>
-                <button onClick={handleNextClick} className='w-full   mb-12 transition duration-300 bg-primary rounded-3xl px-1 md:px-2 text-white  p-2 hover:bg-blue-500'>
+                <button onClick={handleNextClick} className='w-full   mb-12 transition duration-300 bg-primary rounded-xl px-1 md:px-2 text-white  p-2 hover:bg-blue-500'>
                     Next
                 </button>
                 <img src={frame} className='mx-auto mt-12 mb-12 ' alt="" />
-                <button onClick={handleGoogleLogin} className='w-full  mt-5 mb-2 bg-gray-50 text-zinc-400 p-2  rounded-3xl flex items-center justify-center hover:bg-gray-200 transition duration-300'>
+                <button onClick={handleGoogleLogin} className='w-full  mt-5 mb-2 bg-gray-50 text-zinc-400 p-2  rounded-xl flex items-center justify-center hover:bg-gray-200 transition duration-300'>
                     <img src={LogoGoogle} className='mr-10 h-6'  alt="" />
                     Signup with Google
                 </button>
-                <button onClick={handleFacebookLogin} className='w-full  bg-gray-50 text-zinc-400 p-2 rounded-3xl flex items-center justify-center hover:bg-gray-200 transition duration-300'>
+                <button onClick={handleFacebookLogin} className='w-full  bg-gray-50 text-zinc-400 p-2 rounded-xl flex items-center justify-center hover:bg-gray-200 transition duration-300'>
                     <img src={LogoFacebook} className='mr-8 h-6' alt="" />
                     Signup with Facebook
                 </button>

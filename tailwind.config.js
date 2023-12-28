@@ -28,7 +28,8 @@ export default {
       fontFamily:{
         sans: ['sans-serif'],
         serif: ['serif'],
-        playfair: ['Alfa Slab One']
+        playfair: ['Alfa Slab One'],
+        sans: ['Cooper Black']
       }
     },
   },
