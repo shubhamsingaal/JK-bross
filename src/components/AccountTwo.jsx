@@ -98,7 +98,7 @@ const AccountTwo = () => {
             id='purpose'
             value={purpose}
             onChange={handlePurposeChange}
-            className='flex-1  bg-gray-5  ml-1 w-full p-2 border-2 border-[#D8E3FF] rounded-xl text-md mb-4'
+            className='flex-1  bg-gray-5  ml-1 w-full p-2 border-2 border-[#D8E3FF] rounded-xl text-sm mb-4'
           >
             <option value=''>Select</option>
             <option value='delivery'>Delivery</option>
@@ -108,7 +108,7 @@ const AccountTwo = () => {
         </div>
         <button
           onClick={handleSubmit}
-          className={`bg-${isAllFieldsFilled ? 'primary' : 'blue-100'} rounded-3xl px-1 md:px-2 text-white w-full p-2 hover:bg-${isAllFieldsFilled ? 'blue-500' : 'blue-100'} ${isAllFieldsFilled ? '' : 'cursor-not-allowed'}`}
+          className={`bg-${isAllFieldsFilled ? 'primary' : 'blue-100'} rounded-xl px-1 md:px-2 text-white w-full p-2 hover:bg-${isAllFieldsFilled ? 'blue-500' : 'blue-100'} ${isAllFieldsFilled ? '' : 'cursor-not-allowed'}`}
           disabled={!isAllFieldsFilled}
         >
           Submit
