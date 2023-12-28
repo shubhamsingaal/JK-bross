@@ -1,14 +1,14 @@
 import React from 'react';
 import worker from '/assets/worker.png';
-import logo from '/assets/layer-12@2x.png';
+
 import dots from '/assets/group-55@2x.png';
 
-const SignupOne = () => {
+const SignupOne = ({logoSrc}) => {
     return (
         <div className='flex-1 bg-white md:p-8 pt-4 pb-1 h-screen flex flex-col justify-center items-center'>
             {/* Logo Image */}
             <img
-                src={logo}
+                src={logoSrc}
                 alt="Logo"
                 className="w-36 h-auto mb-8 md:mb-8 mt-16"
             />

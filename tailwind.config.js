@@ -28,6 +28,7 @@ export default {
       fontFamily:{
         sans: ['sans-serif'],
         serif: ['serif'],
+        sans: ['Cooper Black']
       }
     },
   },
