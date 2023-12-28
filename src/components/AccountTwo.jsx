@@ -108,7 +108,7 @@ const AccountTwo = () => {
         </div>
         <button
           onClick={handleSubmit}
-          className={`bg-${isAllFieldsFilled ? 'primary' : 'blue-100'} rounded-3xl px-1 md:px-2 text-white w-full p-2 hover:bg-${isAllFieldsFilled ? 'blue-500' : 'blue-100'} ${isAllFieldsFilled ? '' : 'cursor-not-allowed'}`}
+          className={`bg-${isAllFieldsFilled ? 'primary' : 'blue-100'} rounded-xl px-1 md:px-2 text-white w-full p-2 hover:bg-${isAllFieldsFilled ? 'blue-500' : 'blue-100'} ${isAllFieldsFilled ? '' : 'cursor-not-allowed'}`}
           disabled={!isAllFieldsFilled}
         >
           Submit

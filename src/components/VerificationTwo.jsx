@@ -88,7 +88,7 @@ const VerificationTwo = () => {
                     {/* Submit button at the bottom */}
                     <button
                         onClick={handleSubmit}
-                        className={`w-full p-2 mt-2 md:mt-8 lg:mt-1 xl:mb-12 relative  -bottom-20 rounded-3xl transition duration-300 ${isAllFieldsFilled ? 'bg-blue-500 text-white hover:bg-blue-600' : 'bg-blue-100 text-gray-600 cursor-not-allowed '}`}
+                        className={`w-full p-2 mt-2 md:mt-8 lg:mt-1 xl:mb-12 relative  -bottom-20 rounded-xl transition duration-300 ${isAllFieldsFilled ? 'bg-blue-500 text-white hover:bg-blue-600' : 'bg-blue-100 text-gray-600 cursor-not-allowed '}`}
                         disabled={!isAllFieldsFilled}
                     >
                         Submit
