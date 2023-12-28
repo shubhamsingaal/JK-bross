@@ -1,5 +1,5 @@
 import React from 'react'
-import Accordion  from './Accordian';
+import Accordion  from '../Accordian';
 
 export const faqDataSurat = [
     {
@@ -78,7 +78,7 @@ const Questions = () => {
   return (
     <div className='bg-primary flex items-center justify-center py-[7rem]'>
 
-        <div className='w-[70svw]'>
+        <div className='md:w-[70%] w-[90%]'>
             <div className='mb-10 select-none'>
                 <h1 className='text-3xl text-white'>Frequently Asked Questions</h1>
                 <p className='text-md text-[#DBE3FF]'>In case you have more questions, feel free to reach out to us</p>

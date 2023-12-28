@@ -1,7 +1,7 @@
 import React from 'react'
-import Questions from './Questions'
-import Accordion from './Accordian'
-import { faqDataSurat } from './Questions'
+import Questions from '../LandingPage/Questions'
+import Accordion from '../Accordian'
+import { faqDataSurat } from '../LandingPage/Questions'
 const FAQs = () => {
   return (
     <div className='w-[100svw] flex justify-center my-16'>

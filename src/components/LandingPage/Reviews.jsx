@@ -3,10 +3,10 @@ import dummyProfile from "/assets/dummy-profile.png"
 
 const Reviews = () => {
   return (
-    <div className='h-[70svh] flex justify-center items-center'>
-
-        <div className='h-[80%] w-[70%] border-2 border-[#DBE3FF] rounded-3xl p-6'>
-            <h1 className='text-2xl font-semibold text-[#262262] h-[20%]'>Some words from our HAPPY customers</h1>
+    <div className='h-[80svh] w-[100svw] flex items-center justify-center'>
+        <div className='md:w-[70%] w-[90%]'>
+        <div className='max-h-[80%] border-2 border-[#DBE3FF] rounded-3xl p-6'>
+            <h1 className='text-2xl font-semibold text-[#262262] h-[20%] mb-6'>Some words from our HAPPY customers</h1>
 
             <div className='Review-wrapper flex gap-x-4 overflow-x-auto scrollbar-style'>
                 {Array.from({length: 5}).map((_, index) => (
@@ -31,7 +31,7 @@ const Reviews = () => {
                 ))}
             </div>
         </div>
-    
+        </div>
     </div>
   )
 }

@@ -9,7 +9,7 @@ const HomeNav = () => {
 
         <div className='w-[50svw] flex items-center justify-start md:ml-16'>
           <NavLink to="/">
-            <img src={jkbLogo} className='w-[5rem] md:ml-[10rem] ml-[2rem]'/>
+            <img src={jkbLogo} className='md:w-[5rem] w-[4rem] ml-[1rem] md:ml-[10rem]]'/>
           </NavLink>
         </div>
         

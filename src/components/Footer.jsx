@@ -60,9 +60,11 @@ const footerLinkBottom = [
 const Footer = () => {
   return (
     <div className='footer bg-black py-[3rem] flex justify-center'>
-        <div className='footer-content w-[70svw] flex flex-col gap-y-20'>
+        <div className='footer-content w-[70svw] flex flex-col gap-y-5'>
             {/* footer top */}
-            <div className='flex justify-center items-center md:items-start md:justify-evenly flex-wrap gap-y-20 flex-col md:flex-row '>
+            <div className='flex justify-center md:items-center 
+                    md:justify-evenly flex-wrap 
+                    gap-y-10 md:gap-y-20 flex-col md:flex-row '>
 
                 <div className='min-w-[10rem] max-w-[10rem] flex flex-col gap-y-2'>
                     <img src={footerLogo} alt="JK Bros Logo" className='w-[8rem]'/>
@@ -70,7 +72,7 @@ const Footer = () => {
                     <img src={appStore} alt="app store" className='w-[8rem]'/>
                 </div>
 
-                <div className='mt-4 min-w-[10rem] max-w-[10rem] leading-7 text-gray-400'>
+                <div className='md:mt-4 min-w-[10rem] max-w-[10rem] leading-7 text-gray-400'>
                     <p>Send Anything,</p>
                     <p>anywhere,</p>
                     <p>anytime.</p>
@@ -91,9 +93,32 @@ const Footer = () => {
 
             </div>
 
+            <div className='flex md:justify-evenly md:items-center 
+                        flex-wrap flex-col md:flex-row relative'
+                        >
+                <div className='min-w-[10rem] max-w-[10rem]'>
+                    <h1 className='text-white'>Company</h1>
+                </div>   
+                        {/* This is 4 are empty divs temp hack for company word alignment */}
+                        <div className='min-w-[10rem] max-w-[10rem] md:block hidden'>
+                            <h1 className='text-white'></h1>
+                        </div>            
+                        <div className='min-w-[10rem] max-w-[10rem] md:block hidden'>
+                            <h1 className='text-white'></h1>
+                        </div>            
+                        <div className='min-w-[10rem] max-w-[10rem] md:block hidden'>
+                            <h1 className='text-white'></h1>
+                        </div>            
+                        <div className='min-w-[10rem] max-w-[10rem] md:block hidden'>
+                            <h1 className='text-white'></h1>
+                        </div>     
+
+            </div>
             {/* footer bottom  */}
-            <div className='flex justify-center items-center md:justify-evenly flex-wrap gap-y-20 flex-col md:flex-row relative'>
-                <h1 className='text-white absolute top-[-2rem] md:left-[3rem] left-[11rem]'>Company</h1>
+            <div className='flex md:justify-evenly md:items-center 
+                        flex-wrap md:gap-y-20 
+                        gap-y-10 flex-col md:flex-row relative'
+                        >
                     {footerLinkBottom.map((group, index) => (
                         <div key={index}>
                             {group.map((link, index) => (

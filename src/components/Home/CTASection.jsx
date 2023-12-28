@@ -1,10 +1,10 @@
 import React from 'react'
-import SelectCityDropdown from './SelectCityDropdown'
+import SelectCityDropdown from '../SelectCityDropdown'
 import twoWheeler from '/assets/two-wheeler.png'
 import trucks from "/assets/trucks.png"
 import packersMovers from "/assets/packers-movers.png" 
 import intercity from "/assets/intercity.png"
-import { Calendar, MapPin } from '@phosphor-icons/react'
+import { MapPin } from '@phosphor-icons/react'
 
 const CTASection = () => {
   return (
@@ -16,26 +16,26 @@ const CTASection = () => {
             
             <div className='w-[100%] flex gap-x-4 md:flex-row flex-col md:items-start items-center'>
 
-                <div className='flex flex-wrap gap-2 md:gap-4 w-[65%] md:items-center items-center justify-center md:justify-start md:mt-16'>
+                <div className='flex flex-wrap gap-4 md:gap-4 w-[65%] md:items-center items-center justify-center md:justify-start md:mt-6'>
 
-                    <div className='bg-[#F5F7FE] min-w-[6rem] max-h-[14rem] p-6 border-2 border-[#DBE3FF] rounded-3xl cursor-pointer hover:bg-[#D8E3FF] transition'>
+                    <div className='bg-[#F5F7FE] min-w-[6rem] max-h-[16rem] min-h-[16rem] p-6 border-2 border-[#DBE3FF] rounded-3xl cursor-pointer hover:bg-[#D8E3FF] transition'>
                         <img src={twoWheeler} className=''/>
                         <h1 className='m-auto w-full text-center py-[1rem] font-semibold text-textPrimary'>Two Wheelers</h1>
                     </div>
 
-                    <div className='bg-[#F5F7FE] min-w-[6rem] max-h-[14rem] p-6 border-2 border-[#DBE3FF] rounded-3xl cursor-pointer hover:bg-[#D8E3FF] transition'>
+                    <div className='bg-[#F5F7FE] min-w-[6rem] max-h-[16rem] min-h-[16rem] p-6 border-2 border-[#DBE3FF] rounded-3xl cursor-pointer hover:bg-[#D8E3FF] transition'>
                         <img src={trucks} className=''/>
-                        <h1 className='m-auto w-full text-center py-[1rem] font-semibold text-textPrimary'>Two Wheelers</h1>
+                        <h1 className='m-auto w-full text-center py-[1rem] font-semibold text-textPrimary'>Trucks</h1>
                     </div>
 
-                    <div className='bg-[#F5F7FE] min-w-[6rem] max-h-[14rem] p-6  border-2 border-[#DBE3FF] rounded-3xl cursor-pointer hover:bg-[#D8E3FF] transition'>
+                    <div className='bg-[#F5F7FE] min-w-[6rem] max-h-[16rem] min-h-[16rem] p-6  border-2 border-[#DBE3FF] rounded-3xl cursor-pointer hover:bg-[#D8E3FF] transition'>
                         <img src={packersMovers} className=''/>
-                        <h1 className='m-auto w-full text-center py-[1rem] font-semibold text-textPrimary'>Two Wheelers</h1>
+                        <h1 className='m-auto w-full text-center py-[1rem] font-semibold text-textPrimary'>Packers & Movers</h1>
                     </div>
 
-                    <div className='bg-[#F5F7FE] min-w-[6rem] max-h-[14rem] p-6  border-2 border-[#DBE3FF] rounded-3xl cursor-pointer hover:bg-[#D8E3FF] transition'>
+                    <div className='bg-[#F5F7FE] min-w-[6rem] max-h-[16rem] min-h-[16rem] p-6  border-2 border-[#DBE3FF] rounded-3xl cursor-pointer hover:bg-[#D8E3FF] transition'>
                         <img src={intercity} className=''/>
-                        <h1 className='m-auto w-full text-center py-[1rem] font-semibold text-textPrimary'>Two Wheelers</h1>
+                        <h1 className='m-auto w-full text-center py-[1rem] font-semibold text-textPrimary'>Intercity</h1>
                     </div>
                 </div>
                 
