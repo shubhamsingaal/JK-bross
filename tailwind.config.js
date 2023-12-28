@@ -6,6 +6,15 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        "laptop": "1125px",
+        "sm": "620px",
+        "xs": "500px",
+        "xxs": "445px",
+        "xxxs": "350px",
+         // => @media (min-width: 1125px) { ... }
+
+      },
       colors: {
         primary: "#4871FF",
         "primary-400": "#3c76d8",
