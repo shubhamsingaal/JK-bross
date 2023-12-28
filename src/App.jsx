@@ -1,6 +1,7 @@
 import './App.css'
 import { Home, LandingPage, SignUp, VerificationScreen, AccountScreen } from './pages';
 import { BrowserRouter ,Route, Routes } from 'react-router-dom';
+import PSignUp from './pages/Packers&Movers/PSignUp';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path="/loginsignup" element={<SignUp />} />
         <Route path="/account" element={<AccountScreen />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/psignup" element={<PSignUp />} />
       </Routes>
     </BrowserRouter>
   )
