@@ -1,5 +1,5 @@
 import './App.css'
-import { Home, LandingPage, SignUp, VerificationScreen, AccountScreen } from './pages';
+import { Home, LandingPage, SignUp, VerificationScreen, AccountScreen, Profile, TrackOrder } from './pages';
 import { BrowserRouter ,Route, Routes } from 'react-router-dom';
 import PSignUp from './pages/Packers&Movers/PSignUp';
 import PVerification from './pages/Packers&Movers/PVerification';
@@ -16,6 +16,8 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/psignup" element={<PSignUp />} />
         <Route path="/pverification" element={< PVerification/>} />
+        <Route path="/profile" element={<Profile />}/>
+        <Route path="/tracking" element={<TrackOrder />}/>
       </Routes>
     </BrowserRouter>
   )

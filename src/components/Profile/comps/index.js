@@ -1,0 +1,7 @@
+export { default as Contact } from "./Contact"
+export { default as EditProfile } from "./EditProfile"
+export { default as Help } from "./Help"
+export { default as NotificationComp } from "./NotificationComp"
+export { default as PastOrders } from "./PastOrders"
+export { default as Payment } from "./Payment"
+export { default as Legal } from "./Legal"
