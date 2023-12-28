@@ -40,8 +40,8 @@ const AccountTwo = () => {
 
   return (
     <div className='flex-1 md:bg-gray-200 bg-white md:p-11 pt-1'>
-      <div className='container mx-auto md:mb-2 md:mt-2 xl:mx-14 bg-white p-6  rounded-lg md:p-10 h-full w-auto'>
-        <img src={account} alt='Logo' className='mx-5 mb-10' />
+      <div className='container sm:p-10 mx-auto md:mb-2 md:mt-2 xl:mx-14 bg-white p-7  rounded-lg md:p-10 h-full w-auto'>
+        <h1 className='text-3xl font-extrabold text-textPrimary font-serif mb-10'>Account Details</h1>
         <div className='mb-4'>
          
           <input
@@ -50,7 +50,7 @@ const AccountTwo = () => {
             placeholder='Enter your name'
             value={name}
             onChange={handleNameChange}
-            className='flex-1  bg-gray-5  ml-1 w-full p-2 border-2 border-[#D8E3FF] rounded-xl text-lg mb-6'
+            className='flex-1  bg-gray-5  ml-1 w-full p-2 border-2 border-[#D8E3FF] rounded-xl text-md mb-4'
           />
 
           <input
@@ -59,46 +59,46 @@ const AccountTwo = () => {
             placeholder='Enter your email'
             value={email}
             onChange={handleEmailChange}
-            className='flex-1  bg-gray-5  ml-1 w-full p-2 border-2 border-[#D8E3FF] rounded-xl text-lg mb-6'
+            className='flex-1  bg-gray-5  ml-1 w-full p-2 border-2 border-[#D8E3FF] rounded-xl text-md mb-4'
           />
           <div className='birthdate-label'>
-            <label className='label-text'>Birthdate</label>
+            <label className='label-text text-sm text-gray-700'>Birthdate</label>
           </div>
           <div className='flex mb-2'>
             
-            <div className='flex small-input-container'>
+            <div className='flex  gap-3 small-input-container'>
               <input
                 type='text'
                 placeholder='DD'
                 value={birthdate.day}
                 onChange={(e) => handleBirthdateChange('day', e.target.value)}
-                className='flex-1  bg-gray-5  ml-1 w-full p-2 border-2 border-[#D8E3FF] rounded-xl text-lg mb-6'
+                className='flex-1  bg-gray-5  ml-1 w-full h-12 p-2 border-2 border-[#D8E3FF] rounded-xl text-md mb-4'
               />
               <input
                 type='text'
                 placeholder='MM'
                 value={birthdate.month}
                 onChange={(e) => handleBirthdateChange('month', e.target.value)}
-                className='flex-1  bg-gray-5  ml-1 w-full p-2 border-2 border-[#D8E3FF] rounded-xl text-lg mb-6'
+                className='flex-1  bg-gray-5  ml-1 w-full h-12 p-2 border-2 border-[#D8E3FF] rounded-xl text-md mb-4'
               />
               <input
                 type='text'
-                placeholder='YY'
+                placeholder='YYYY'
                 value={birthdate.year}
                 onChange={(e) => handleBirthdateChange('year', e.target.value)}
-                className='flex-1  bg-gray-5 ml-1 w-full p-2 border-2 border-[#D8E3FF] rounded-xl text-lg mb-6'
+                className='flex-1  bg-gray-5 ml-1 w-full p-2 h-12 border-2 border-[#D8E3FF] rounded-xl text-lg mb-6'
               />
             </div>
           </div>
 
-          <label htmlFor='purpose' className='label-text'>
+          <label htmlFor='purpose' className='label-text text-sm text-gray-700'>
             I'm here for...
           </label>
           <select
             id='purpose'
             value={purpose}
             onChange={handlePurposeChange}
-            className='flex-1  bg-gray-5  ml-1 w-full p-2 border-2 border-[#D8E3FF] rounded-xl text-lg mb-6'
+            className='flex-1  bg-gray-5  ml-1 w-full p-2 border-2 border-[#D8E3FF] rounded-xl text-md mb-4'
           >
             <option value=''>Select</option>
             <option value='delivery'>Delivery</option>

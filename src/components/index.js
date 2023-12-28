@@ -1,3 +1,5 @@
+import { fromJSON } from "postcss"
+
 export { default as LandingPageNav } from "./LandingPage/LandingPageNav"
 export { default as GenerateQuotation } from "./LandingPage/GenerateQuotation"
 export { default as ServicesCards } from "./LandingPage/ServicesCards"
@@ -8,7 +10,7 @@ export { default as Questions } from "./LandingPage/Questions"
 export { default as Footer } from "./Footer"
 export { default as SignupOne } from "./SignupOne"
 export { default as SignupTwo } from "./SignupTwo"
-export { default as SignupThree } from "./SignupThree"
+
 export { default as VerificationOne } from "./VerificationOne"
 export { default as VerificationTwo } from "./VerificationTwo"
 export { default as AccountOne } from "./AccountOne"
@@ -26,4 +28,6 @@ export { default as ShifitingProcess } from "./Home/ShiftingProcess"
 export { default as PricingSection } from "./Home/PricingSection"
 export { default as Cities } from "./Home/Cities"
 export { default as FAQs } from "./Home/FAQs"
+
+export { default as PSignupTwo} from "./Packers&Movers/PSignupTwo"
 
