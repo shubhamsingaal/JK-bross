@@ -35,7 +35,7 @@ const GenerateQuotation = () => {
   return (
         <section className='hero bg-white 
             xxxs:h-[280svh] 
-            xxs:h-[230svh]
+            xxs:h-[200svh]
             xs:h-[210svh] 
             sm:h-[200svh] 
             md:h-[240svh] 
