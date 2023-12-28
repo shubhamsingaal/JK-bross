@@ -5,7 +5,7 @@ import vehicleShifting from "/assets/vehicle-shifting.png"
 import withinCity from "/assets/within-city.png"
 import betweenCities from "/assets/between-cities.png"
 import { NavLink } from 'react-router-dom'
-import SelectCityDropdown from './SelectCityDropdown'
+import SelectCityDropdown from '../SelectCityDropdown'
 import HeroLandingPage from "/assets/heroLandingPage.png"
 
 const QuotationConfig = [

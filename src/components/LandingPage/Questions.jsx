@@ -1,5 +1,5 @@
 import React from 'react'
-import Accordion  from './Accordian';
+import Accordion  from '../Accordian';
 
 export const faqDataSurat = [
     {

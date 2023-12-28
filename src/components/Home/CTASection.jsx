@@ -1,5 +1,5 @@
 import React from 'react'
-import SelectCityDropdown from './SelectCityDropdown'
+import SelectCityDropdown from '../SelectCityDropdown'
 import twoWheeler from '/assets/two-wheeler.png'
 import trucks from "/assets/trucks.png"
 import packersMovers from "/assets/packers-movers.png" 
