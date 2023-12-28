@@ -28,7 +28,7 @@ const SignupTwo = () => {
     };
 
     return (
-        <div className='flex-1 bg-gray-200 p-11'>
+        <div className='flex-1 md:bg-gray-200 bg-white md:p-11 pt-1'>
             <div className='container mx-auto bg-white p-6 rounded-md h-full'>
                 <h1 className='text-3xl font-extrabold text-textPrimary font-serif'>Welcome</h1>
                 <h4 className='mb-2 font-semibold'>Create a new account</h4>

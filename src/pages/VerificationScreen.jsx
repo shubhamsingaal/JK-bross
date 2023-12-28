@@ -5,7 +5,7 @@ import VerificationTwo from '../components/VerificationTwo';
 const VerificationScreen = () => {
   return (
 
-    <div className='flex '>
+    <div className='flex md:flex-row flex-col'>
 
       <VerificationOne />
       <VerificationTwo />
