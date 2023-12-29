@@ -1,7 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import jkbLogo from '/assets/logojkbros.svg';
-
+import homeIcon from '/assets/homeicon.svg';
+import earningsIcon from '/assets/walleticon.svg';
+import profileIcon from '/assets/profileicon.svg';
+import ordersIcon from '/assets/ordericon.svg';
 
 const PackersNav = () => {
     return (
@@ -14,18 +17,23 @@ const PackersNav = () => {
 
             <div className='w-[50svw] flex items-center justify-center'>
                 <div className='flex gap-x-4 items-center text-textPrimary font-semibold'>
-                    <NavLink to="/tracking" className='text-sm'>
+                    <NavLink to="/tracking" className='text-sm flex items-center'>
+                        <img src={homeIcon} alt="Home Icon" className="w-4 h-4 mr-1" />
                         Home
                     </NavLink>
-                    <NavLink to="/earnings" className='text-sm'>
-                        Earnings
-                    </NavLink>
-                    <NavLink to="/profile" className='text-sm'>
-                        Profile
-                    </NavLink>
-                    <NavLink to="/orders" className='text-sm'>
+                    <NavLink to="/orders" className='text-sm flex items-center'>
+                        <img src={ordersIcon} alt="Orders Icon" className="w-4 h-4 mr-1" />
                         Orders
                     </NavLink>
+                    <NavLink to="/earnings" className='text-sm flex items-center'>
+                        <img src={earningsIcon} alt="Earnings Icon" className="w-4 h-4 mr-1" />
+                        Earnings
+                    </NavLink>
+                    <NavLink to="/profile" className='text-sm flex items-center'>
+                        <img src={profileIcon} alt="Profile Icon" className="w-4 h-4 mr-1" />
+                        Profile
+                    </NavLink>
+                  
                 </div>
             </div>
         </div>
