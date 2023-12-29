@@ -35,4 +35,5 @@ export {default as PAccountTwo} from "./Packers&Movers/PAccountTwo"
 export {default as EditProfileComponent} from "./Profile/EditProfileComponent"
 export { default as ProfileInfo } from "./Profile/ProfileInfo"
 export { default as EmailVerify} from "./Packers&Movers/EmailVerify"
+export {default as CardVerify} from "./Packers&Movers/CardVerify"
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import account from '/assets/Account.png';
-import cameraIcon from '/assets/camera.svg'; // Import the camera icon
+// import account from '/assets/Account.png';
+import cameraIcon from '/assets/camera.svg'; 
 // import '../css/AccountTwo.css';
 
 const PAccountTwo = () => {
@@ -55,7 +55,7 @@ const PAccountTwo = () => {
                     <label htmlFor='profilePhoto' className='text-sm  text-gray-700'>
                         Profile Photo
                     </label>
-                    <div className='relative'>
+                    <div className='relative '>
                         <input
                             type='file'
                             id='profilePhoto'
@@ -63,7 +63,7 @@ const PAccountTwo = () => {
                             onChange={handleProfilePhotoChange}
                             className='absolute opacity-0 h-0 w-0 '
                         />
-                        <div className='flex items-center  border-2 border-[#D8E3FF] justify-center bg-gray-5 w-12 h-12 rounded-xl overflow-hidden'>
+                        <div className='flex items-center  cursor-pointer border-2 border-[#D8E3FF] justify-center bg-gray-5 w-12 h-12 rounded-xl overflow-hidden'>
                             {profilePhoto ? (
                                 <img src={URL.createObjectURL(profilePhoto)} alt='Profile' className='w-full h-full object-cover' />
                             ) : (
