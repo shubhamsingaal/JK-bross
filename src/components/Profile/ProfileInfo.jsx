@@ -76,9 +76,9 @@ const ProfileInfo = () => {
   return (
     <div className='w-[100svw] flex justify-center'>
 
-        <div className='md:w-[70%] w-[90%] py-14 flex md:flex-row flex-col justify-evenly'>
+        <div className='md:w-[70%] w-[90%] py-14 flex md:flex-row flex-col justify-evenly gap-y-10'>
             
-            <div className='w-[40%] flex'>
+            <div className='md:w-[40%] flex'>
                 <EditProfileComponent 
                     onChange={(value) => handleClick(value)}
                     value={section}
@@ -86,8 +86,8 @@ const ProfileInfo = () => {
                 />
             </div>
 
-            <div className='min-w-[60%] flex'>
-              { SelectedComp && <SelectedComp />}
+            <div className='flex'>
+                  { SelectedComp && <SelectedComp />}
             </div>
         
         </div>
