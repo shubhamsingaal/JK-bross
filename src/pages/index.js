@@ -6,3 +6,4 @@ export { default as Home } from "./Home"
 export {default as PSignup} from "./Packers&Movers/PSignUp";
 export { default as PVerification } from "./Packers&Movers/PVerification";
 export {default as EmailScreen} from "./Packers&Movers/EmailScreen"
+export {default as PAccount} from "./Packers&Movers/PAccount"

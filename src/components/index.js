@@ -31,4 +31,5 @@ export { default as FAQs } from "./Home/FAQs"
 
 export { default as PSignupTwo} from "./Packers&Movers/PSignupTwo"
 export {default as EmailVerify} from "./Packers&Movers/EmailVerify"
+export {default as PAccountTwo} from "./Packers&Movers/PAccountTwo"
 

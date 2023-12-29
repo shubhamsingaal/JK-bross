@@ -1,5 +1,5 @@
 import './App.css'
-import { Home, LandingPage, SignUp, VerificationScreen, AccountScreen, EmailScreen, PVerification, PSignup } from './pages';
+import { Home, LandingPage, SignUp, VerificationScreen, AccountScreen, EmailScreen, PVerification, PSignup, PAccount } from './pages';
 import { BrowserRouter ,Route, Routes } from 'react-router-dom';
 
 
@@ -16,6 +16,7 @@ function App() {
         <Route path="/psignup" element={<PSignup />} />
         <Route path="/pverification" element={< PVerification/>} />
         <Route path="/emailscreen" element={< EmailScreen />} />
+        <Route path="/paccount" element={< PAccount />} />
       </Routes>
     </BrowserRouter>
   )
