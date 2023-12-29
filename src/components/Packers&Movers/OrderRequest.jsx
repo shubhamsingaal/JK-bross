@@ -4,8 +4,8 @@ import location from '/assets/Location.svg';
 
 const OrderRequest = () => {
     return (
-        <div className="flex w-[360px] h-[243px] mt-5 mb-8 bg-gray-200 rounded-xl text-left text-xs text-black font-inter relative p-10 m-2 ">
-            <section className=" rounded-mini bg-ghostwhite w-full h-full" />
+        <div className="flex w-[360px] h-[243px] mt-5 mb-10 bg-gray-200 rounded-xl text-left text-xs text-black font-inter relative p-10  mx-auto my-auto md:m-0 min-[402px]:mx-auto ">
+            <section className=" rounded-mini  bg-ghostwhite w-full h-full" />
             <button className="cursor-pointer p-0 bg-[transparent] absolute top-[178px] left-[188px] w-[157px] h-[50px]">
                 <div className="rounded-xl  border-blue-500  bg-white text-blue-600 box-border w-[157px] h-[50px] border-[1px] border-solid border-royalblue" />
                 <div className="text-mini h-12 rounded-xl tracking-[0.01em] font-inter text-royalblue text-center inline-block w-[88px]">

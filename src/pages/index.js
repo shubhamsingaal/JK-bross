@@ -11,4 +11,5 @@ export { default as Profile } from "./Profile"
 export { default as TrackOrder } from "./TrackOrder"
 export {default as VerifyIdentity} from "./Packers&Movers/VerifyIdentity"
 export { default as OrderDetails } from "./Packers&Movers/OrderDetails"
+export {default as OrderProgress} from "./Packers&Movers/OrderProgress"
 
