@@ -1,5 +1,5 @@
 import './App.css'
-import { Home, LandingPage, SignUp, VerificationScreen, AccountScreen, EmailScreen, PVerification, PSignup, PAccount } from './pages';
+import { Home, LandingPage, SignUp, VerificationScreen, AccountScreen, EmailScreen, PVerification, PSignup, PAccount, Profile, TrackOrder } from './pages';
 import { BrowserRouter ,Route, Routes } from 'react-router-dom';
 
 
@@ -15,8 +15,11 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/psignup" element={<PSignup />} />
         <Route path="/pverification" element={< PVerification/>} />
-        <Route path="/emailscreen" element={< EmailScreen />} />
+       
         <Route path="/paccount" element={< PAccount />} />
+        <Route path="/profile" element={<Profile />}/>
+        <Route path="/tracking" element={<TrackOrder />}/>
+        <Route path="/emailscreen" element={<EmailScreen />} />
       </Routes>
     </BrowserRouter>
   )

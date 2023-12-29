@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import account from '/assets/Account.png';
+import cameraIcon from '/assets/camera.svg'; // Import the camera icon
 // import '../css/AccountTwo.css';
 
 const PAccountTwo = () => {
@@ -11,6 +12,7 @@ const PAccountTwo = () => {
         year: '',
     });
     const [purpose, setPurpose] = useState('');
+    const [profilePhoto, setProfilePhoto] = useState(null);
 
     const handleNameChange = (e) => {
         setName(e.target.value);
@@ -31,19 +33,48 @@ const PAccountTwo = () => {
         setPurpose(e.target.value);
     };
 
-    const handleSubmit = () => {
-        // Add logic to handle form submission
-        // You can access the values of name, email, birthdate, and purpose here
+    const handleProfilePhotoChange = (e) => {
+        const file = e.target.files[0];
+        setProfilePhoto(file);
     };
 
-    const isAllFieldsFilled = name !== '' && email !== '' && birthdate.day !== '' && birthdate.month !== '' && birthdate.year !== '' && purpose !== '';
+    const handleSubmit = () => {
+        // Add logic to handle form submission
+        // You can access the values of name, email, birthdate, purpose, and profilePhoto here
+    };
+
+    const isAllFieldsFilled = name !== '' && email !== '' && birthdate.day !== '' && birthdate.month !== '' && birthdate.year !== '' && purpose !== '' && profilePhoto;
 
     return (
         <div className='flex-1 md:bg-gray-200 bg-white md:p-11 pt-1'>
             <div className='container sm:p-10 mx-auto md:mb-2 md:mt-2 xl:mx-14 bg-white p-7  rounded-lg md:p-10 h-full w-auto'>
                 <h1 className='text-3xl font-extrabold text-textPrimary font-serif mb-10'>Account Details</h1>
-                <div className='mb-4'>
 
+                {/* Profile Photo Input */}
+                <div className='mb-4 relative'>
+                    <label htmlFor='profilePhoto' className='text-sm  text-gray-700'>
+                        Profile Photo
+                    </label>
+                    <div className='relative'>
+                        <input
+                            type='file'
+                            id='profilePhoto'
+                            accept='image/*'
+                            onChange={handleProfilePhotoChange}
+                            className='absolute opacity-0 h-0 w-0 '
+                        />
+                        <div className='flex items-center  border-2 border-[#D8E3FF] justify-center bg-gray-5 w-12 h-12 rounded-xl overflow-hidden'>
+                            {profilePhoto ? (
+                                <img src={URL.createObjectURL(profilePhoto)} alt='Profile' className='w-full h-full object-cover' />
+                            ) : (
+                                <img src={cameraIcon} alt='Camera' className='w-6 h-6' />
+                            )}
+                        </div>
+                    </div>
+                </div>
+
+                {/* Other Input Fields */}
+                <div className='mb-4'>
                     <input
                         type='text'
                         id='name'
@@ -65,7 +96,6 @@ const PAccountTwo = () => {
                         <label className='label-text text-sm text-gray-700'>Birthdate</label>
                     </div>
                     <div className='flex mb-2'>
-
                         <div className='flex  gap-3 small-input-container'>
                             <input
                                 type='text'
@@ -106,6 +136,7 @@ const PAccountTwo = () => {
                         {/* Add more options as needed */}
                     </select>
                 </div>
+
                 <button
                     onClick={handleSubmit}
                     className={`bg-${isAllFieldsFilled ? 'primary' : 'blue-100'} rounded-xl px-1 md:px-2 text-white w-full p-2 hover:bg-${isAllFieldsFilled ? 'blue-500' : 'blue-100'} ${isAllFieldsFilled ? '' : 'cursor-not-allowed'}`}

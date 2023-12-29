@@ -1,4 +1,5 @@
 import { fromJSON } from "postcss"
+import { EditProfile } from "./Profile/comps"
 
 export { default as LandingPageNav } from "./LandingPage/LandingPageNav"
 export { default as GenerateQuotation } from "./LandingPage/GenerateQuotation"
@@ -30,6 +31,8 @@ export { default as Cities } from "./Home/Cities"
 export { default as FAQs } from "./Home/FAQs"
 
 export { default as PSignupTwo} from "./Packers&Movers/PSignupTwo"
-export {default as EmailVerify} from "./Packers&Movers/EmailVerify"
 export {default as PAccountTwo} from "./Packers&Movers/PAccountTwo"
+export {default as EditProfileComponent} from "./Profile/EditProfileComponent"
+export { default as ProfileInfo } from "./Profile/ProfileInfo"
+export { default as EmailVerify} from "./Packers&Movers/EmailVerify"
 
