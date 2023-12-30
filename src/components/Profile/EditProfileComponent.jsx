@@ -1,4 +1,5 @@
-import React, { Fragment, useEffect, useState } from 'react'
+import { UserCircleGear } from '@phosphor-icons/react';
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const EditProfileComponent = ({
@@ -7,26 +8,107 @@ const EditProfileComponent = ({
   config
 }) => {
 
-  const [ profileOption, setProfileOptiion ] = useState(value)
+    const [ profileOption, setProfileOptiion ] = useState(value)
 
-  const handleOptionClick = (value) => {
-    setProfileOptiion(value)
-    onChange(value) 
-  }
+    const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {
-    setProfileOptiion(config[0])
-    onChange && onChange(config[0])
-  }, [])
+    const toggleDropdown = () => {
+      setIsOpen(!isOpen);
+    };
+
+    const handleOptionClick = (value) => {
+      setProfileOptiion(value)
+      setIsOpen(false)
+      onChange(value) 
+    }
+
+    useEffect(() => {
+      setProfileOptiion(config[0])
+      onChange && onChange(config[0])
+    }, [])
+  
 
 
   return (
-    <div className='w-[100%] bg-[#F5F7FE] border-2 rounded-3xl border-[#DBE3FF] pb-[8rem] '>
+    <div className=' 
+        md:bg-[#F5F7FE] bg-primary border-2 rounded-3xl border-[#DBE3FF] 
+          py-[1.5rem] md:py-[0rem] md:pb-[8rem] md:w-max w-[100svw]'>
 
-        <div>
+        {/* Mobile View Breakpoint */}
+        <div className='md:hidden block'>
+          <div className="relative">
+            <div onClick={toggleDropdown} className="flex items-center cursor-pointer justify-between px-[2rem] w-full ">
+              {profileOption?.value === "editProfile" ? (
+                <div>
+                  <h1 className='font-playfair md:text-2xl text-xl text-white'>Dhruvil Jogiwala</h1>
+                    <div className='flex items-center gap-2 w-max'>
+                      <p className={`text-sm ${profileOption?.value === "editProfile" ? "text-gray-300" : "text-gray-400"} `}> +91 99999 99999 </p>
+                      <div className={`w-[.2rem] h-[.2rem] rounded-full ${profileOption?.value === "editProfile" ? "bg-gray-300" : "bg-gray-700"}`}></div>
+                      <p className={`text-sm ${profileOption?.value === "editProfile" ? "text-gray-300" : "text-gray-400"} `}> dhruviljogiwala786@gmail.com </p>
+                    </div>
+                </div>
+          ) : (
+            <>
+              <h1 className='text-white text-2xl' >{profileOption?.title}</h1>
+                <svg
+                  className={`ml-2 w-6 h-6 transition-transform transform ${
+                    isOpen ? 'rotate-180' : ''
+                  }`}
+                  fill="none"
+                  stroke="white"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+            </>
+              )}
+            </div>
+            <div className={`absolute left-0 w-full transition-all ${isOpen ? 'top-full opacity-100' : 'top-0 opacity-0'}`}>
+              {isOpen && (
+                <div className="absolute top-full left-0 mt-2 bg-white border border-gray-300 rounded-b-3xl shadow-md w-full">
+                  {config.map((option) => (
+                    option.value !== profileOption?.value && ( // Exclude the selected option
+                      <div
+                        key={option.value}
+                        onClick={() => handleOptionClick(option)}
+                        className="px-[2rem] py-[1rem] cursor-pointer hover:bg-[#C8D4FF] hover:bg-opacity-30 rounded-b-3xl"
+                      >
+                        {option.value === "editProfile" ? (
+                          <>
+                            <div className='flex items-center justify-between'>
+                              <h1 className='font-playfair md:text-2xl text-xl'>Dhruvil Jogiwala</h1>
+                              <UserCircleGear size={20} weight="bold" className='hover:text-bold'/>
+                            </div>
+                            <div className='flex items-center gap-2 w-max'>
+                              <p className={`text-sm ${profileOption?.value === option.value  ? "text-gray-300": "text-gray-400"} `}> +91 99999 99999 </p>
+                              <div className={`w-[.2rem] h-[.2rem] rounded-full
+                                  ${profileOption?.value === option.value  ? "bg-gray-300": "bg-gray-700"}
+                                `}></div>
+                              <p className={`text-sm ${profileOption?.value === option.value ? "text-gray-300": "text-gray-400"} `}> dhruviljogiwala786@gmail.com </p>
+                            </div> 
+                          </>
+                        ) : (
+                          <h1>{option.title}</h1>
+                        )}
+                      </div>
+                    )
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+
+
+        {/* Desktop View */}
+        <div className='md:block hidden'>
           {config.map(( option ) => (
-              <>
-              {
               option?.value === "editProfile" 
               ? (
                 <div key={option.value} 
@@ -65,7 +147,11 @@ const EditProfileComponent = ({
                     onClick={() => handleOptionClick(option)}
                 >
                 <h1>{option?.title}</h1>
-                <p className={`text-sm ${profileOption?.value === option.value && option.value !== "contactUs" ? "text-gray-300": "text-gray-400"} `}>{option?.subtitle}</p>
+                <p 
+                  className={`text-sm ${profileOption?.value === option.value && option.value !== "contactUs" 
+                    ? "text-gray-300": "text-gray-400"} `}>
+                      {option?.subtitle}
+                </p>
                 
                 {
                     option.subSection?.title 
@@ -79,7 +165,7 @@ const EditProfileComponent = ({
                 }
 
               </div>  
-              )}</>
+              )
           ))}
 
         </div>

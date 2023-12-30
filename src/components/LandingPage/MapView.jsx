@@ -1,5 +1,7 @@
 import React from 'react'
-import IndiaMap from '/assets/india-map.png'
+import IndiaMap from '/assets/IndiaMapJKBro.svg'
+import "./CSS/animation.css"
+
 const MapView = () => {
   return (
     <div

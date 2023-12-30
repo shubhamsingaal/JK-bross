@@ -40,3 +40,4 @@ export {default as PackersNav} from "./Packers&Movers/PackersNav";
 export {default as Calendar} from "./Packers&Movers/Calendar"
 export { default as OrderRequest } from "./Packers&Movers/OrderRequest"
 
+export { default as PSignupTwo} from "./Packers&Movers/PSignupTwo"
