@@ -12,4 +12,6 @@ export { default as TrackOrder } from "./TrackOrder"
 export {default as VerifyIdentity} from "./Packers&Movers/VerifyIdentity"
 export { default as OrderDetails } from "./Packers&Movers/OrderDetails"
 export {default as OrderProgress} from "./Packers&Movers/OrderProgress"
+export {default as OrderOngoing} from "./Packers&Movers/OrderOngoing"
+export {default as OrderOngoing3} from "./Packers&Movers/OrderOngoing3"
 

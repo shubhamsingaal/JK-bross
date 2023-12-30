@@ -77,7 +77,7 @@ const TabButton = ({ tab, count, selected, onClick }) => {
         >
             <span>{tab}</span>
             {count >= 0 && (
-                <span className="ml-1 text-xs bg-blue-500 text-white rounded-full px-2">
+                <span className="ml-1 text-xs bg-blue-500 text-white  rounded-full px-2">
                     {count}
                 </span>
             )}
