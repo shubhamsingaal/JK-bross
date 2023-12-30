@@ -19,10 +19,9 @@ const Calendar = () => {
         { day: 21, text: 'Today' },
         { day: 21, text: 'Today' },
         { day: 21, text: 'Today' },
-        { day: 21, text: 'Today' },
-        { day: 21, text: 'Today' },
+        
 
-    
+
         // Add more data as needed
     ];
 
@@ -35,27 +34,36 @@ const Calendar = () => {
     };
 
     return (
-        
-        <div className="overflow-x-auto scrollbar-style">
-            <div className="flex mx-auto mt-4   border-gray-300 container sm:p-10  md:mb-2 md:mt-2 xl:mx-14 bg-white p-7  rounded-lg md:p-10 h-full w-auto">
-                {calendarData.map((item) => (
-                    <div
-                        key={item.day}
-                        className={classNames(
-                            'flex-shrink-0 p-2 h-13 w-13 rounded-xl m-2 cursor-pointer border border-gray-400 bg-white',
-                            { 'bg-blue-500 text-white border-blue-500': selectedDay === item.day }
-                        )}
-                        onClick={() => handleBoxClick(item.day)}
-                    >
-                        <div className="text-sm">{item.text}</div>
-                        <div className="text-sm text-center text-blue-500">{item.day}</div>
-                    </div>
-                ))}
-            </div>
 
-            
+        <div className='h-[18svh] w-[100svw] flex items-center justify-center'>
+            <div className='md:w-[70%] w-[130%]'>
+                <div className='max-h-[2%]  rounded-3xl'>
+                    <div className="overflow-x-auto scrollbar-style">
+                        <div className="flex container mx-2  md:mb-2 md:mt-2 bg-white   rounded-lg  h-full w-auto">
+                            {calendarData.map((item) => (
+                                <div
+                                    key={item.day}
+                                    className={classNames(
+                                        'flex-shrink-0 p-2 h-13 w-13 rounded-xl m-1 cursor-pointer border border-gray-400 bg-white',
+                                        { 'bg-blue-500 text-white border-blue-500': selectedDay === item.day }
+                                    )}
+                                    onClick={() => handleBoxClick(item.day)}
+                                >
+                                    <div className="text-sm">{item.text}</div>
+                                    <div className="text-sm text-center text-blue-500">{item.day}</div>
+                                </div>
+                            ))}
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
         </div>
-     
+
+
     );
 };
 

@@ -26,7 +26,7 @@ const OrderRequest = () => {
                 </div>
             </button> */}
             <img
-                className="absolute top-[57px] left-[15px] max-h-full w-[330px] object-cover"
+                className="absolute top-[55px] left-[15px] max-h-full w-[330px] object-cover"
                 alt=""
                 src={line}
             />
@@ -38,7 +38,7 @@ const OrderRequest = () => {
                     ₹356
                 </b>
                 <img
-                    className="absolute top-[0px] left-[0px] max-h-full w-[330px] object-cover"
+                    className="absolute top-[12px] left-[0px] max-h-full w-[330px] object-cover"
                     alt=""
                     src={line}
                 />
@@ -48,11 +48,11 @@ const OrderRequest = () => {
                     src={line}
                 />
             </div>
-            <p className="m-0 absolute top-[72px] left-[45px] tracking-[0.01em] leading-[15px] inline-block w-[266px] opacity-[0.5]">
+            <p className="m-0 absolute top-[72px] left-[45px] tracking-[0.01em] leading-[15px] inline-block w-[266px] text-sm lg:text-xs text-zinc-700">
                 B-35 Naginawadi society, Lorem10 dairy road, katargam, Surat, Gujarat. 395004
             </p>
             <img
-                className="absolute top-[71px] left-[15px] w-4 h-[21px] object-cover"
+                className="absolute cursor-pointer top-[71px] left-[15px] w-4 h-[21px] object-cover"
                 alt=""
                 src={location}
             />
