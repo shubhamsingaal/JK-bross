@@ -9,7 +9,7 @@ import progressh from '/assets/progressh.svg'
 const OrderOngoingTwo = () => {
     return (
         <div className='w-[100svw] mb-7 flex justify-center'>
-            <div className='lg:w-[70%] w-[90%] mt-[5rem]'>
+            <div className='lg:w-[70%] w-[90%] mt-[7rem]'>
 
                 <div className='w-[100%] flex gap-x-4 md:flex-row flex-col md:items-start items-center'>
 
@@ -17,15 +17,18 @@ const OrderOngoingTwo = () => {
 
                     </div>
                     <div className='w-[40%] min-w-[20rem] mt-[2rem] md:mt-[-4rem]'>
-                        <div className='flex justify-between '>
+                        <div className='flex justify-between m-4'>
                             <h1 className='text-md font-semibold'>Order Tracking</h1>
-                            <p className='text-xs'>Status <br /> On going</p>
+                            <p className='text-xs'>Status <br /> <strong className='text-semibold'>On going</strong></p>
                         </div>
-                        <div className='flex justify-between  '>
+                        <div className='flex justify-between mx-4 '>
                             <h1 className='text-xs text-zinc-500'>On <br />24th Sep 2023</h1>
-                            <p className='text-xs text-zinc-500'>Between <br /><a href="" >10:00Am-12:00Pm</a> </p>
+                            <div className='flex flex-col'>
+                                <p className='text-right text-xs text-zinc-500'>Between </p>
+                            <p className='text-xs text-zinc-500'><a href="" >10:00Am-12:00Pm</a> </p>
+                            </div>
                         </div>
-                        <img src={line} className='mt-7' alt="" />
+                        <img src={line} className='mt-2' alt="" />
                         <div className='flex p-4 bg-[#F5F7FE] '>
                             <img src={location} className='p-2 cursor-pointer' alt="" />
                             <p className="text-xs mt-2 text-zinc-500 mb-2">B-35 Naginawadi society, Sumul dairy road, katargam, Surat, Gujarat. 395004</p>
