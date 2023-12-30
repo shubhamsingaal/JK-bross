@@ -1,4 +1,5 @@
 import { fromJSON } from "postcss"
+import { EditProfile } from "./Profile/comps"
 
 export { default as LandingPageNav } from "./LandingPage/LandingPageNav"
 export { default as GenerateQuotation } from "./LandingPage/GenerateQuotation"
@@ -28,8 +29,13 @@ export { default as ShifitingProcess } from "./Home/ShiftingProcess"
 export { default as PricingSection } from "./Home/PricingSection"
 export { default as Cities } from "./Home/Cities"
 export { default as FAQs } from "./Home/FAQs"
-
+export { default as PSignupTwo} from "./Packers&Movers/PSignupTwo"
+export {default as PAccountTwo} from "./Packers&Movers/PAccountTwo"
+export {default as EditProfileComponent} from "./Profile/EditProfileComponent"
 export { default as ProfileInfo } from "./Profile/ProfileInfo"
 export { default as EmailVerify} from "./Packers&Movers/EmailVerify"
+export {default as CardVerify} from "./Packers&Movers/CardVerify"
+export {default as PackersNav} from "./Packers&Movers/PackersNav";
+export {default as Calendar} from "./Packers&Movers/Calendar"
+export { default as OrderRequest } from "./Packers&Movers/OrderRequest"
 
-export { default as PSignupTwo} from "./Packers&Movers/PSignupTwo"

@@ -1,6 +1,6 @@
 import React from 'react'
 import IndiaMap from '/assets/IndiaMapJKBro.svg'
-import "./CSS/animation.css"
+// import "./CSS/animation.css"
 
 const MapView = () => {
   return (
