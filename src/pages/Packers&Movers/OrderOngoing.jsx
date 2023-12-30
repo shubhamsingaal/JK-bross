@@ -6,13 +6,10 @@ import OrderOngoingTwo from '../../components/Packers&Movers/OrderOngoingTwo';
 const Ongoing = () => {
     return (
         <div className='flex flex-col'>
-            <PackersNav/>
-            
+            <PackersNav />    
             <div className='flex md:flex-row flex-col'>
-                
-                <OrderOngoingTwo/>
+                <OrderOngoingTwo />
             </div>
-
             <Footer />
         </div>
     )
