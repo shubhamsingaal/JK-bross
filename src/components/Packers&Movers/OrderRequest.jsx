@@ -1,23 +1,30 @@
 import React from 'react';
 import line from "/assets/vector-21.svg"
 import location from '/assets/Location.svg';
+import { Button } from '../../ui';
 
 const OrderRequest = () => {
     return (
         <div className="flex w-[360px] h-[243px] mt-5 mb-10 bg-gray-200 rounded-xl text-left text-xs text-black font-inter relative p-10  mx-auto my-auto md:m-0 min-[402px]:mx-auto ">
             <section className=" rounded-mini  bg-ghostwhite w-full h-full" />
-            <button className="cursor-pointer p-0 bg-[transparent] absolute top-[178px] left-[188px] w-[157px] h-[50px]">
+            {/* <button className="cursor-pointer p-0 bg-[transparent] absolute top-[178px] left-[188px] w-[157px] h-[50px]">
                 <div className="rounded-xl  border-blue-500  bg-white text-blue-600 box-border w-[157px] h-[50px] border-[1px] border-solid border-royalblue" />
                 <div className="text-mini h-12 rounded-xl tracking-[0.01em] font-inter text-royalblue text-center inline-block w-[88px]">
                     <p className='-top-[32px] relative text-blue-600 text-md'>Ignore</p>
                 </div>
-            </button>
-            <button className="cursor-pointer p-0 bg-[transparent] absolute top-[130px] left-[15px] w-[157px] h-[50px]">
+            </button> */}
+            <Button variant="Primary" type="submit" className='border-blue-600 text-blue-500 h-12 w-[40rem] -left-[4rem] top-[8.7rem] right-8 relative'>
+                Accept
+            </Button>
+            <Button variant="secondary" type="submit" className='border-blue-300 text-blue-500 h-12 w-[40rem] left-[1rem] top-[8.7rem] right-8 relative'>
+                Ignore
+            </Button>
+            {/* <button className="cursor-pointer p-0 bg-[transparent] absolute top-[130px] left-[15px] w-[157px] h-[50px]">
                 <div className="  flex rounded-mini bg-royalblue box-border w-[157px] h-[50px] border-[1px] border-solid border-royalblue" />
                 <div className="h-12 w-auto  bg-blue-500  text-center rounded-xl">
                     <p className='top-[18px] relative text-white'>Accept</p>
                 </div>
-            </button>
+            </button> */}
             <img
                 className="absolute top-[57px] left-[15px] max-h-full w-[330px] object-cover"
                 alt=""

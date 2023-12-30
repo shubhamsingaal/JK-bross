@@ -8,7 +8,7 @@ const ProgressButton = () => {
     return (
         <div className="flex w-[360px] h-[243px] mt-5 mb-10 bg-gray-200 rounded-xl text-left text-xs text-black font-inter relative p-10  mx-auto my-auto md:m-0 min-[402px]:mx-auto ">
             <section className=" rounded-mini  bg-ghostwhite " />
-            <Button variant="primary" type="submit" className='h-12 w-[8rem] left-[0.001rem] top-[9rem] right-8 relative '>
+            <Button variant="primary" type="submit" className='h-12 w-[31rem] left-[0.001rem] top-[9rem] right-8 relative '>
                 View Progress
             </Button>
         
