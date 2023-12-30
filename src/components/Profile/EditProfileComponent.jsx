@@ -32,7 +32,7 @@ const EditProfileComponent = ({
   return (
     <div className=' 
         md:bg-[#F5F7FE] bg-primary border-2 rounded-3xl border-[#DBE3FF] 
-          py-[1.5rem] md:py-[0rem] md:pb-[8rem] md:w-max w-[100svw]'>
+          py-[1.5rem] md:py-[0rem] md:pb-[8rem] md:w-max w-[90svw]'>
 
         {/* Mobile View Breakpoint */}
         <div className='md:hidden block'>
@@ -85,7 +85,8 @@ const EditProfileComponent = ({
                               <h1 className='font-playfair md:text-2xl text-xl'>Dhruvil Jogiwala</h1>
                               <UserCircleGear size={20} weight="bold" className='hover:text-bold'/>
                             </div>
-                            <div className='flex items-center gap-2 w-max'>
+
+                            <div className='flex items-center gap-2 flex-wrap'>
                               <p className={`text-sm ${profileOption?.value === option.value  ? "text-gray-300": "text-gray-400"} `}> +91 99999 99999 </p>
                               <div className={`w-[.2rem] h-[.2rem] rounded-full
                                   ${profileOption?.value === option.value  ? "bg-gray-300": "bg-gray-700"}
@@ -152,7 +153,6 @@ const EditProfileComponent = ({
                     ? "text-gray-300": "text-gray-400"} `}>
                       {option?.subtitle}
                 </p>
-                
                 {
                     option.subSection?.title 
                     && 

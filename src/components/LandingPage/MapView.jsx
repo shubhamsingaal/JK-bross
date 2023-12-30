@@ -1,6 +1,5 @@
 import React from 'react'
-import IndiaMap from '/assets/IndiaMapJKBro.svg'
-import "./CSS/animation.css"
+import mapView from '/assets/mapView.png'
 
 const MapView = () => {
   return (
@@ -51,7 +50,7 @@ const MapView = () => {
 
             <div className='h-[70%] m-auto flex justify-center pb-[2rem]'>
                 <img 
-                    src={IndiaMap} className='h-[100%]'/>
+                    src={mapView} className='h-[100%]'/>
             </div>
         </div>
     </div>

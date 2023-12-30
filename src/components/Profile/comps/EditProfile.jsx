@@ -64,7 +64,7 @@ const EditProfile = () => {
   };
   
   return (
-    <div className='w-[100%] px-10'>
+    <div className='md:w-[80%] px-10'>
       <h1 className='font-playfair text-2xl text-textPrimary'>Account Details</h1>
       <form
         className='md:pt-6 pt-4 flex flex-col flex-grow'
