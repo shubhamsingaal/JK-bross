@@ -32,8 +32,8 @@ const OrderOngoing3 = () => {
                                 <div className='flex justify-between mx-4 '>
                                     <h1 className='text-xs text-zinc-500'>On <br />24th Sep 2023</h1>
                                     <div className='flex flex-col'>
-                                        <p className='text-right text-xs text-zinc-500'>Between </p>
-                                        <p className='text-xs text-zinc-500'><a href="" >10:00Am-12:00Pm</a> </p>
+                                        <p className='text-right text-xs font-semibold text-zinc-500'>Between </p>
+                                        <p className='text-xs text-blue-400'><a href="" >10:00Am-12:00Pm</a> </p>
                                     </div>
                                 </div>
                                 <img src={line} className='mt-2' alt="" />

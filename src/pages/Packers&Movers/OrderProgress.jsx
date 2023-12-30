@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calendar, Footer, OrderRequest, PackersNav } from '../../components';
+import { Calendar, Footer, OrderRequest, PackersNav, ProgressButton } from '../../components';
 
 const OrderDetails = () => {
     const [selectedTab, setSelectedTab] = useState('All');
@@ -46,7 +46,7 @@ const OrderDetails = () => {
                 <div className='section mt-7'>
                     <p className='mb-2 text-sm  text-left text-gray-500'>Ongoing</p>
                     <div className='flex flex-col md:flex-row md:flex-wrap md:gap-2'>
-                        <OrderRequest />
+                        <ProgressButton />
                        
                         
                     </div>

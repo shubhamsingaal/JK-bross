@@ -3,18 +3,15 @@ import line from "/assets/vector-21.svg"
 import location from '/assets/Location.svg';
 import { Button } from '../../ui';
 
-const OrderRequest = () => {
+
+const ProgressButton = () => {
     return (
         <div className="flex w-[360px] h-[243px] mt-5 mb-10 bg-gray-200 rounded-xl text-left text-xs text-black font-inter relative p-10  mx-auto my-auto md:m-0 min-[402px]:mx-auto ">
-            <section className=" rounded-mini  bg-ghostwhite w-full h-full" />
-
-            <Button variant="Primary" type="submit" className='border-blue-600 text-blue-500 h-12 w-[40rem] -left-[4rem] top-[8.7rem] right-8 relative'>
-                Accept
+            <section className=" rounded-mini  bg-ghostwhite " />
+            <Button variant="primary" type="submit" className='h-12 w-[31rem] left-[0.001rem] top-[9rem] right-8 relative '>
+                View Progress
             </Button>
-            <Button variant="secondary" type="submit" className='border-blue-300 text-blue-500 h-12 w-[40rem] left-[1rem] top-[8.7rem] right-8 relative'>
-                Ignore
-            </Button>
-          
+        
             <img
                 className="absolute top-[55px] left-[15px] max-h-full w-[330px] object-cover"
                 alt=""
@@ -62,4 +59,4 @@ const OrderRequest = () => {
     );
 };
 
-export default OrderRequest;
+export default ProgressButton;
