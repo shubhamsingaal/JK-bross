@@ -70,7 +70,9 @@ const OrderDetails = () => {
 const TabButton = ({ tab, count, selected, onClick }) => {
     return (
         <div
-            className={`cursor-pointer text-${selected ? 'blue-500' : 'gray-500'} ${selected ? 'border-b-2 border-blue-500' : ''}`}
+            className={
+                `cursor-pointer text-xs text-${selected ? 'blue-500' : 'gray-500'}
+                 ${selected ? 'border-b-2 border-blue-500' : ''}`}
             onClick={onClick}
         >
             <span>{tab}</span>
