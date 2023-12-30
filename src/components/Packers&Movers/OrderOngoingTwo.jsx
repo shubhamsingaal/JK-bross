@@ -18,8 +18,11 @@ const OrderOngoingTwo = () => {
                     </div>
                     <div className='w-[40%] min-w-[20rem] mt-[2rem] md:mt-[-4rem]'>
                         <div className='flex justify-between m-4'>
-                            <h1 className='text-md font-semibold'>Order Tracking</h1>
-                            <p className='text-xs'>Status <br /> <strong className='text-semibold'>On going</strong></p>
+                            <h1 className='text-xl font-semibold text-textPrimary font-serif'>Order Tracking</h1>
+                            <div className='flex flex-col'>
+                                <p className='text-right text-xs text-zinc-500'>Status </p>
+                                <p className='text-xs text-zinc-500'><a href="" >On going</a> </p>
+                            </div>
                         </div>
                         <div className='flex justify-between mx-4 '>
                             <h1 className='text-xs text-zinc-500'>On <br />24th Sep 2023</h1>
