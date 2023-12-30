@@ -12,6 +12,7 @@
   "dependencies": {
     "@hookform/resolvers": "^3.3.3",
     "@phosphor-icons/react": "^2.0.15",
+    "@react-google-maps/api": "^2.19.2",
     "classnames": "^2.5.0",
     "dom": "^0.0.3",
     "phosphor-react": "^1.4.1",
