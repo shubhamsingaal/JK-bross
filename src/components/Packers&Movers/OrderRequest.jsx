@@ -42,7 +42,7 @@ const OrderRequest = () => {
                 />
             </div>
             <p className="m-0 absolute top-[72px] left-[45px] tracking-[0.01em] leading-[15px] inline-block w-[266px] opacity-[0.5]">
-                B-35 Naginawadi society, Sumul dairy road, katargam, Surat, Gujarat. 395004
+                B-35 Naginawadi society, Lorem10 dairy road, katargam, Surat, Gujarat. 395004
             </p>
             <img
                 className="absolute top-[71px] left-[15px] w-4 h-[21px] object-cover"

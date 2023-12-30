@@ -41,7 +41,7 @@ const AccountTwo = () => {
   return (
     <div className='flex-1 md:bg-gray-200 bg-white md:p-11 pt-1'>
       <div className='container sm:p-10 mx-auto md:mb-2 md:mt-2 xl:mx-14 bg-white p-7  rounded-lg md:p-10 h-full w-auto'>
-        <h1 className='text-3xl font-extrabold text-textPrimary font-serif mb-10'>Account Details</h1>
+        <h1 className=' text-textPrimary mb-10 font-playfair text-2xl'>Account Details</h1>
         <div className='mb-4'>
          
           <input
