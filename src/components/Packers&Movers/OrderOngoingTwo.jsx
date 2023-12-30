@@ -38,14 +38,14 @@ const OrderOngoingTwo = () => {
                         </div>
                         <img src={line} className='' alt="" />
                         <div className='bg-[#F5F7FE] w-[100%]   min-h-[20rem] p-8 '>
-                            <div className='flex mx-auto'>
-                                <div className="mx-auto">
+                            <div className='flex mx-auto '>
+                                <div className="mx-auto xl:-ml-1 2xl:mx-auto">
                                     <img src={progressv} alt="" />
                                 </div>
                                 <div className="flex flex-col  ">
-                                    <p className="text-sm my-auto">Arrived at the Location</p>
-                                    <p className="text-sm my-auto">Starting with the Designated task</p>
-                                    <p className="text-sm my-auto">Designated task completed</p>
+                                    <p className="text-sm my-auto ">Arrived at the Location</p>
+                                    <p className="text-sm my-auto ">Starting with the Designated task</p>
+                                    <p className="text-sm my-auto ">Designated task completed</p>
                                 </div>
                             </div>
                             <img src={dottedline} className='mt-4 mb-4' alt="" />
