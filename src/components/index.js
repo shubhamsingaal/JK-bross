@@ -29,7 +29,6 @@ export { default as ShifitingProcess } from "./Home/ShiftingProcess"
 export { default as PricingSection } from "./Home/PricingSection"
 export { default as Cities } from "./Home/Cities"
 export { default as FAQs } from "./Home/FAQs"
-
 export { default as PSignupTwo} from "./Packers&Movers/PSignupTwo"
 export {default as PAccountTwo} from "./Packers&Movers/PAccountTwo"
 export {default as EditProfileComponent} from "./Profile/EditProfileComponent"
@@ -40,4 +39,3 @@ export {default as PackersNav} from "./Packers&Movers/PackersNav";
 export {default as Calendar} from "./Packers&Movers/Calendar"
 export { default as OrderRequest } from "./Packers&Movers/OrderRequest"
 
-export { default as PSignupTwo} from "./Packers&Movers/PSignupTwo"

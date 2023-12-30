@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-
-const EditProfile = () => {
-  return (
-    <div>EditProfile</div>
-  )
-}
-
-=======
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
 import { Button, DateInput, Dropdown, Input } from '../../../ui';
@@ -126,5 +116,4 @@ const EditProfile = () => {
     </div>
   )
 }
->>>>>>> 0a0292987e4fde52af314a1c2153ef60b9aca7b9
 export default EditProfile
