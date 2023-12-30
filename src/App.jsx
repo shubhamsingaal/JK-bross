@@ -1,5 +1,5 @@
 import './App.css'
-import { Home, LandingPage, SignUp, VerificationScreen, AccountScreen, EmailScreen, PVerification, PSignup, PAccount, Profile, TrackOrder, VerifyIdentity, OrderDetails, OrderProgress } from './pages';
+import { Home, LandingPage, SignUp, VerificationScreen, AccountScreen, EmailScreen, PVerification, PSignup, PAccount, Profile, TrackOrder, VerifyIdentity, OrderDetails, OrderProgress, OrderOngoing } from './pages';
 import { BrowserRouter ,Route, Routes } from 'react-router-dom';
 
 
@@ -23,6 +23,7 @@ function App() {
         <Route path="/verifyidentity" element={<VerifyIdentity />} />
         <Route path="/orderdetails" element={<OrderDetails />} />
         <Route path="/orderprogress" element={<OrderProgress />} />
+        <Route path="/orderongoing" element={<OrderOngoing />} />
 
 
       </Routes>
