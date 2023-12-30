@@ -13,7 +13,7 @@ const PackersNav = () => {
                 <NavLink to="/">
                     <img
                         src={jkbLogo}
-                        className='md:w-[5rem] w-[4rem] ml-[1rem] md:ml-[2rem] lg:ml-[8rem]'
+                        className='md:w-[5rem] w-[4rem] ml-[1rem] md:ml-[5rem] lg:ml-[8rem]'
                         alt='Logo'
                     />
                 </NavLink>

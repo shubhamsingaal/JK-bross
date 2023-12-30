@@ -61,7 +61,7 @@ const GenerateQuotation = () => {
 
                         <div className='flex flex-col gap-4 items-center md:items-start gap-y-4'>
                             <SelectCityDropdown />
-                            <div className='flex xl:flex-nowrap flex-wrap justify-evenly gap- md:gap-x-5'>
+                            <div className='flex xl:flex-nowrap flex-wrap justify-evenly gap-4 md:gap-x-5'>
                                 {QuotationConfig.map((item, index) => {
                                     return(
                                         <div key={index} className='border-2 border-[#DBE3FF] min-w-[10.5rem] h-[240px] p-2 rounded-3xl bg-[#F5F7FE] hover:bg-primary-50 transition cursor-pointer'>

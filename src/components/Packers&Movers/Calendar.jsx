@@ -36,7 +36,7 @@ const Calendar = () => {
 
     return (
         
-        <div className="overflow-x-auto ">
+        <div className="overflow-x-auto scrollbar-style">
             <div className="flex mx-auto mt-4   border-gray-300 container sm:p-10  md:mb-2 md:mt-2 xl:mx-14 bg-white p-7  rounded-lg md:p-10 h-full w-auto">
                 {calendarData.map((item) => (
                     <div
