@@ -9,21 +9,19 @@ import progressh from '/assets/progressh.svg'
 const OrderOngoingTwo = () => {
     return (
         <div className='w-[100svw] mb-7 flex justify-center'>
-            <div className='lg:w-[70%] w-[90%] mt-[7rem]'>
+            <div className='lg:w-[70%] w-[%] mt-[1rem]  mx-auto md:mt-[7rem]'>
 
-                <div className='w-[100%] flex gap-x-4 md:flex-row flex-col md:items-start items-center'>
-
-                    <div className='flex flex-wrap gap-4 md:gap-4 w-[65%] md:items-center items-center justify-center md:justify-start md:mt-6'>
-
-                    </div>
+                <div className='  md:w-[10%] flex md:flex-row flex-col md:items-start items-center'>
                     <div className='w-[40%] min-w-[20rem] mt-[2rem] md:mt-[-4rem]'>
-                        <div className='flex justify-between m-4'>
+
+                        <div className='flex justify-between mx-4 my-2'>
                             <h1 className='text-xl font-semibold text-textPrimary font-serif'>Order Tracking</h1>
                             <div className='flex flex-col'>
                                 <p className='text-right text-xs text-zinc-500'>Status </p>
                                 <p className='text-xs font-semibold text-zinc-500'><a href="" >On going</a> </p>
                             </div>
                         </div>
+
                         <div className='flex justify-between mx-4 '>
                             <h1 className='text-xs text-zinc-500'>On <br />24th Sep 2023</h1>
                             <div className='flex flex-col'>
@@ -31,6 +29,7 @@ const OrderOngoingTwo = () => {
                             <p className='text-xs text-blue-400'><a href="" >10:00Am-12:00Pm</a> </p>
                             </div>
                         </div>
+                        
                         <img src={line} className='mt-2' alt="" />
                         <div className='flex p-4 bg-[#F5F7FE] '>
                             <img src={location} className='p-2 cursor-pointer' alt="" />

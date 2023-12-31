@@ -14,4 +14,7 @@ export { default as OrderDetails } from "./Packers&Movers/OrderDetails"
 export {default as OrderProgress} from "./Packers&Movers/OrderProgress"
 export {default as OrderOngoing} from "./Packers&Movers/OrderOngoing"
 export {default as OrderOngoing3} from "./Packers&Movers/OrderOngoing3"
-
+export {default as Earnings} from "./Packers&Movers/Earnings";
+export { default as PProfileInfo } from "./Packers&Movers/PProfileInfo"
+export {default as AccountProfile} from "./Packers&Movers/AccountProfile"
+ 
