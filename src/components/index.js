@@ -44,5 +44,6 @@ export {default as LinkAccount} from "./Packers&Movers/LinkAccount"
 export {default as EarningCards} from "./Packers&Movers/EarningCards"
 export {default as PAccountDetails} from "./Packers&Movers/PAccountDetails"
 export {default as PEditProfileComponent} from "./Packers&Movers/PEditProfileComponent"
+export {default as VerticalShippingIndicator} from "./Packers&Movers/VerticalShippingIndicator"
 
 

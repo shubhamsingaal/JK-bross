@@ -59,8 +59,8 @@ const PAccountDetails = () => {
     } = useForm({
         resolver: zodResolver(schema),
         defaultValues: {
-            name: 'Initial Name',
-            email: 'initial@email.com',
+            name: 'Dhruvil Jogiwala',
+            email: '',
             dob: {
                 day: '01',
                 month: '01',
@@ -87,11 +87,11 @@ const PAccountDetails = () => {
 
     return (
         <div className='md:w-[80%] px-10'>
-            <h1 className='font-playfair text-2xl mb-4 text-textPrimary'>Account </h1>
+            <h1 className='font-playfair text-xl mb-4 text-textPrimary'>Account Details</h1>
             {/* Profile Photo Section */}
             <div className='flex items-center'>
                 <div
-                    className='w-16 h-15 bg-gray-300 rounded-md overflow-hidden cursor-pointer relative'
+                    className='w-16 h-15 bg-gray-300 m-y-1 rounded-md overflow-hidden cursor-pointer relative'
                     onClick={handleProfilePhotoClick}
                 >
                     {/* Display your profile photo or camera icon here */}
@@ -132,15 +132,10 @@ const PAccountDetails = () => {
                 {/* Name */}
                 <Input type='name' label='Name' register={register} errors={errors} />
 
-                <Input
-                    type='email'
-                    label='Email'
-                    register={register}
-                    errors={errors}
-                    placeholder='Enter your email'
-                />
+              
 
                 {/* BirthDate */}
+
                 <DateInput
                     day={getValues('dob.day', '')}
                     month={getValues('dob.month', '')}
@@ -149,10 +144,12 @@ const PAccountDetails = () => {
                     onMonthChange={(value) => setValue('dob.month', value)}
                     onYearChange={(value) => setValue('dob.year', value)}
                     getValues={getValues}
-                    label={'BirthDate'}
+                    label='BirthDate'
                     register={register}
                     setValue={setValue}
                     errors={errors}
+                    
+                    
                 />
 
                 {/* Profession Dropdown */}
@@ -195,6 +192,7 @@ const PAccountDetails = () => {
                     onValueChange={(value) => setValue('availability', value)}
                     placeholder='Available'
                     label='Availability Status'
+                   
                 />
 
                 <Button variant='primary' type='submit'>
