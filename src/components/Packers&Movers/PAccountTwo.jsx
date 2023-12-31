@@ -14,6 +14,8 @@ const PAccountTwo = () => {
     const [purpose, setPurpose] = useState('');
     const [profilePhoto, setProfilePhoto] = useState(null);
 
+    
+
     const handleNameChange = (e) => {
         setName(e.target.value);
     };
