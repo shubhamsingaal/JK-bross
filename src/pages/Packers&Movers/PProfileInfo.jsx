@@ -1,30 +1,16 @@
 import React, { useState } from 'react'
-import { Contact, Help, Legal, NotificationComp, PastOrders, Payment } from '../../components/Profile/comps'
-import { EditProfileComponent, PAccountDetails } from '../../components'
+import { Contact, Help, Legal } from '../../components/Profile/comps'
+import { EditProfileComponent, PAccountDetails, PackersNav } from '../../components'
 
 const profileOptions = [
     {
         value: "editProfile",
     },
-    {
-        value: "payment",
-        title: "Payment",
-        subtitle: "Payment modes and details"
-    },
-    {
-        value: "notification",
-        title: "Notification",
-        subtitle: "",
-    },
+ 
     {
         value: "help",
         title: "Help",
         subtitle: "FAQs & Links",
-    },
-    {
-        value: "pastOrders",
-        title: "Past orders",
-        subtitle: ""
     },
     {
         value: "legal",
@@ -74,10 +60,9 @@ const PProfileInfo = () => {
     const SelectedComp = selectedSection && sectionMap[selectedSection]
 
     return (
+        
         <div className='w-[100svw] flex justify-center'>
-
             <div className='md:w-[70%] w-[90%] py-14 flex md:flex-row flex-col md:justify-between flex-wrap gap-y-10'>
-
                 <div className='md:w-[40%] flex-1'>
 
 
