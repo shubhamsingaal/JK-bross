@@ -7,7 +7,6 @@ const Accordion = ({ data, invert, variant }) => {
       setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
     };
     
-    console.log({ data: data.map((data) => ({ jsx: data.jsx })) });
 
     return (  
       <div className="w-[100%] mx-auto mt-4">

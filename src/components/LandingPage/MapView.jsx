@@ -1,5 +1,6 @@
 import React from 'react'
-import mapView from '/assets/mapView.png'
+// import mapView from '/assets/mapView.png'
+import MapAnimation from './MapAnimation'
 
 const MapView = () => {
   return (
@@ -49,8 +50,10 @@ const MapView = () => {
             </div>
 
             <div className='h-[70%] m-auto flex justify-center pb-[2rem]'>
-                <img 
-                    src={mapView} className='h-[100%]'/>
+                <MapAnimation />
+                
+                {/* <img 
+                    src={mapView} className='h-[100%]'/> */}
             </div>
         </div>
     </div>
