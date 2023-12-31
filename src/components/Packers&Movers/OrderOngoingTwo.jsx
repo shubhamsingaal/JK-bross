@@ -4,6 +4,14 @@ import dottedline from "/assets/dottedline.svg"
 import location from "/assets/Location.svg"
 import progressv from '/assets/progressv.svg'
 import progressh from '/assets/progressh.svg'
+import VerticalShippingIndicator from './VerticalShippingIndicator';
+
+
+const steps = [
+    { id: 1, value: '', display: 'Arrived at the location', stepComplete: true },
+    { id: 2, value: '', display: 'Started with the designated task', stepComplete: true },
+    { id: 3, value: '', display: 'Designated task completed', stepComplete: false },
+];
 
 
 const OrderOngoingTwo = () => {
@@ -37,7 +45,7 @@ const OrderOngoingTwo = () => {
                         </div>
                         <img src={line} className='' alt="" />
                         <div className='bg-[#F5F7FE] w-[100%]   min-h-[20rem] p-8 '>
-                            <div className='flex mx-auto '>
+                            {/* <div className='flex mx-auto '>
                                 <div className="mx-auto xl:-ml-1 2xl:mx-auto">
                                     <img src={progressv} alt="" />
                                 </div>
@@ -46,7 +54,11 @@ const OrderOngoingTwo = () => {
                                     <p className="text-sm my-auto ">Starting with the Designated task</p>
                                     <p className="text-sm my-auto ">Designated task completed</p>
                                 </div>
-                            </div>
+                               
+                            </div> */}
+                          
+                            <VerticalShippingIndicator steps={steps} />
+                            
                             <img src={dottedline} className='mt-4 mb-4' alt="" />
                             <div className='flex justify-between '>
                                 <h1 className='text-md '>Budget</h1>
@@ -54,6 +66,8 @@ const OrderOngoingTwo = () => {
                             </div>
 
                         </div>
+
+                       
 
                         <img src={line} className=' mb-4' alt="" />
                         <div className="flex justify-center">
