@@ -40,4 +40,6 @@ export {default as Calendar} from "./Packers&Movers/Calendar"
 export { default as OrderRequest } from "./Packers&Movers/OrderRequest"
 export {default as OrderOngoing} from "./Packers&Movers/OrderOngoingTwo"
 export {default as ProgressButton} from "./Packers&Movers/ProgressButton"
+export {default as LinkAccount} from "./Packers&Movers/LinkAccount"
+export {default as EarningCards} from "./Packers&Movers/EarningCards"
 
