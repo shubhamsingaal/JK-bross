@@ -38,7 +38,7 @@ const ShippingProgress = ({ progress }) => {
 
                     <div className='flex gap-8' ref={parentRef}>
                         <div className={`w-[1.5rem] h-[1.5rem] rounded-full border-4 
-                                  ${step.stepComplete ? 'bg-primary' : 'bg-gray-[#E5E7EB]'}   `}>
+                                  ${step.stepComplete ? 'bg-primary' : 'bg-primary'}   `}>
                             <div className={`
                                     ${ index !== 0 ? 'step-outline' : ''} 
                             `}>
@@ -61,8 +61,7 @@ const ShippingProgress = ({ progress }) => {
                                         /* margin-top: ${stepHeight}; */
                                         right: 50%;
                                         transform: translate(-50%, -50%);
-                                        border: ${step.stepComplete ? '2px solid #4871FF' : '2px dashed #E5E7EB'}; 
-                                        /* border: 2px solid #4871FF ;  */
+                                        border:  2px solid #4871FF;
                                         box-sizing: border-box;
                                     }
 
