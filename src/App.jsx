@@ -1,9 +1,14 @@
+import { useEffect } from 'react';
 import './App.css'
 import { Home, LandingPage, SignUp, VerificationScreen, AccountScreen, EmailScreen, PVerification, PSignup, PAccount, Profile, TrackOrder, VerifyIdentity, OrderDetails, OrderProgress, OrderOngoing, OrderOngoing3 } from './pages';
 import { BrowserRouter ,Route, Routes } from 'react-router-dom';
 
 
 function App() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <BrowserRouter>

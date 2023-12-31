@@ -2,6 +2,7 @@ import React from 'react'
 import directionPins from '/assets/direction.svg'
 import { Button } from '../../ui';
 import VerticalShippingIndicator from './VerticalShippingIndicator';
+import  ShippingProgress  from './ShippingProgress'
 
 const steps = [
     { id: 1, value: 'Package dispatched', display: 'Dispatched', stepComplete: true },
@@ -43,7 +44,8 @@ const ShippingInfo = () => {
 
             </div>
             
-            <VerticalShippingIndicator steps={steps} />
+            {/* <VerticalShippingIndicator steps={steps} /> */}
+            <ShippingProgress progress={steps}/>
 
             <div className='bg-secondary p-4 border-2 border-outline rounded-3xl max-w-[20rem] md:ml-[1.5rem] mt-[1rem]'>
                 <p className='text-sm mb-[1rem]'>Driver Details</p>
