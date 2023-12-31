@@ -89,7 +89,7 @@ const GenerateQuotation = () => {
                                 </h1>
                                     <br/>
                                 <h1 className='w-[7rem] text-4xl font-thin text-[#48aeff] tracking-wide group-hover:text-primary-400 transition'>
-                                    <span className='text--500'>
+                                    <span className='text-white'>
                                         In just 2 mins
                                     </span>
                                 </h1>
