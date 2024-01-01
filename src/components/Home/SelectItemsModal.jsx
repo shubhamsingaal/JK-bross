@@ -72,7 +72,9 @@ const SelectItemsModal = ({ open, setOpen }) => {
     <Modal 
         title="Select items"
         open={open}
+        setOpen={setOpen}
         onCloseClick={() => setOpen(false)}
+        closeText={"Close"}
     >   
         <div className='pl-[1rem]'>
             <Tab.Group vertical 

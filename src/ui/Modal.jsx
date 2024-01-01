@@ -48,12 +48,12 @@ const Modal = ({ open, setOpen, children, submitText, closeText, title, onCloseC
                                 {closeText &&(
                                     <Button
                                     variant={"secondary"} 
-                                    onClick={() => { onCloseClick ? onCloseClick : setOpen(false)}}>
+                                    onClick={onCloseClick ? onCloseClick : setOpen}>
                                         {closeText}
                                     </Button>
                                 )}
                                 {submitText &&(
-                                    <Button onClick={() => { onSubmitClick ? onSubmitClick : setOpen(false)}} >
+                                    <Button onClick={onSubmitClick ? onSubmitClick : setOpen} >
                                         {submitText}
                                     </Button>
                                 )}
