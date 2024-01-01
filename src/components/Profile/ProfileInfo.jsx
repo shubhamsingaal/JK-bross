@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import EditProfileComponent from './EditProfileComponent'
 import { CheckOutPreviewModal, Contact, EditProfile, Help, Legal, NotificationComp, PastOrders, Payment } from './comps'
-import { Modal } from '../../ui'
+import { Button, Modal } from '../../ui'
 
 const profileOptions = [
   {
@@ -48,15 +48,6 @@ const profileOptions = [
   }
 ]
 
-const Logout = () => {
-  return(
-    <div className='md:w-[100%]'>
-      <h1 className='font-playfair text-2xl text-textPrimary'>Log out</h1>
-
-    </div>
-  )
-}
-
 const sectionMap = {
   "editProfile": EditProfile,
   "payment": Payment,
@@ -65,7 +56,7 @@ const sectionMap = {
   "pastOrders": PastOrders,
   "legal": Legal,
   "contactUs": Contact,
-  "logOut": Logout
+  "logOut": ''
 }
 
 
@@ -96,6 +87,8 @@ const ProfileInfo = () => {
             <div className='flex-1 md:w-[60%]'>
                   { SelectedComp && <SelectedComp />}
                   <div className="inset-0 flex items-center justify-center">
+
+
 
                     {/* Not sure where this modal is supposed to be */}
                     <button

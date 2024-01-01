@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
 import './App.css'
 import { Home, LandingPage, SignUp, VerificationScreen, AccountScreen, EmailScreen, PVerification, PSignup, PAccount, Profile, TrackOrder, VerifyIdentity, OrderDetails, OrderProgress, OrderOngoing, OrderOngoing3, Earnings, AccountProfile } from './pages';
-import { BrowserRouter ,Route, Routes } from 'react-router-dom';
+import { BrowserRouter ,Navigate,Route, Routes } from 'react-router-dom';
+import { AuthProvider } from './Contexts/AuthContext.jsx';
 
 
 function App() {
@@ -12,6 +13,8 @@ function App() {
 
   return (
     <BrowserRouter>
+      <AuthProvider>
+        
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/verification" element={<VerificationScreen />} />
@@ -35,6 +38,8 @@ function App() {
 
 
       </Routes>
+
+      </AuthProvider>
     </BrowserRouter>
   )
 }

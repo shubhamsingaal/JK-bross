@@ -14,7 +14,7 @@ const CheckOutPreviewModal = ({ open, setOpen }) => {
       closeText={"Back"} 
       size="lg" 
       title="Checkout Preview"
-      onSubmitClick={console.log("Hello")}
+      onSubmitClick={() => console.log("Hello")}
       >
         <div className='flex border-y-2 border-outline md:flex-row flex-col'>
           

@@ -1,13 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import jkbLogo from '/assets/jk-bro-logo.png'
 import { CaretRight, UserCircle } from '@phosphor-icons/react'
 import crossHair from "/assets/crosshair.png"
 import crossHairBold from "/assets/crosshairbold.png"
+import { useAuth } from '../../Contexts/AuthContext'
 
 const HomeNav = () => {
+  const { isLoggedIn, login } = useAuth();
 
-  const [ user, setUser ] = useState("rahul")
   const location = useLocation();
   const currentPath = location.pathname
 
@@ -19,9 +20,13 @@ const HomeNav = () => {
             <img src={jkbLogo} className='md:w-[5rem] w-[4rem] ml-[1rem] md:ml-[10rem]'/>
           </NavLink>
         </div>
+
+        <button onClick={() => login()}>
+          logged In View
+        </button>
         
         <div className='w-[50svw] flex items-center justify-center'>
-            {!user ?
+            {!isLoggedIn ?
               <div className='flex gap-x-2 md:gap-x-4 items-center'>
 
                 <div className=' w-max md:px-4 md:py-2 px-4 py-1 rounded-full flex md:gap-x-4 border-2 border-outline'>

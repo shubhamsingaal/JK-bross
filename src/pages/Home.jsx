@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { 
   HomeNav, 
   NavMenu, 
@@ -13,6 +13,7 @@ import {
   Footer } from '../components'
 
 const Home = () => {
+
   return (
     <div className='overflow-x-hidden'>
         <HomeNav />

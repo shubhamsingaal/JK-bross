@@ -1,6 +1,7 @@
 import { UserCircleGear } from '@phosphor-icons/react';
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, redirect } from 'react-router-dom'
+import { useAuth } from '../../Contexts/AuthContext';
 
 const EditProfileComponent = ({
   onChange,
@@ -10,16 +11,25 @@ const EditProfileComponent = ({
 
     const [ profileOption, setProfileOptiion ] = useState(value)
 
+    const { logout } = useAuth() 
+
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleDropdown = () => {
       setIsOpen(!isOpen);
     };
 
-    const handleOptionClick = (value) => {
-      setProfileOptiion(value)
+    const handleOptionClick = (option) => {
+      if (option.value === "logOut") {
+        logout();
+        
+        redirect("/");
+        return;
+      }
+    
+      setProfileOptiion(option)
       setIsOpen(false)
-      onChange(value) 
+      onChange(option) 
     }
 
     useEffect(() => {
@@ -36,7 +46,7 @@ const EditProfileComponent = ({
 
         {/* Mobile View Breakpoint */}
         <div className='md:hidden block'>
-          <div className="relative">
+          <div className="relative z-50">
             <div onClick={toggleDropdown} className="flex items-center cursor-pointer justify-between px-[2rem] w-full ">
               {profileOption?.value === "editProfile" ? (
                 <div>
