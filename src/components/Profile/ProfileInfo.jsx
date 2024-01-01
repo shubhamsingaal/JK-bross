@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import EditProfileComponent from './EditProfileComponent'
-import { Contact, EditProfile, Help, Legal, NotificationComp, PastOrders, Payment } from './comps'
+import { CheckOutPreviewModal, Contact, EditProfile, Help, Legal, NotificationComp, PastOrders, Payment } from './comps'
+import { Modal } from '../../ui'
 
 const profileOptions = [
   {
@@ -67,6 +68,7 @@ const sectionMap = {
   "logOut": Logout
 }
 
+
 const ProfileInfo = () => {
 
   const [ section, setSection ] = useState()
@@ -75,6 +77,8 @@ const ProfileInfo = () => {
   }
   const selectedSection = section?.value
   const SelectedComp = selectedSection && sectionMap[selectedSection]
+
+  const [ open, setOpen ] = useState(false)
 
   return (
     <div className='w-[100svw] flex justify-center'>
@@ -91,6 +95,19 @@ const ProfileInfo = () => {
 
             <div className='flex-1 md:w-[60%]'>
                   { SelectedComp && <SelectedComp />}
+                  <div className="inset-0 flex items-center justify-center">
+
+                    {/* Not sure where this modal is supposed to be */}
+                    <button
+                        type="button"
+                        onClick={() => setOpen(true)}
+                        className="rounded-md bg-black/20 px-4 py-2 text-sm mt-4 font-medium text-white hover:bg-black/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75"
+                    >
+                        Open Modal
+                    </button>
+                    <CheckOutPreviewModal open={open} setOpen={setOpen}/>
+                  
+                  </div>
             </div>
         
         </div>
