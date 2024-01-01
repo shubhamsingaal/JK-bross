@@ -35,7 +35,7 @@ const PSignupTwo = () => {
                         {/* Add more country codes as needed */}
                     </select>
                     <input
-                        type='tel'
+                        type='number'
                         placeholder='Mobile Number'
                         value={phoneNumber}
                         onChange={handlePhoneNumberChange}

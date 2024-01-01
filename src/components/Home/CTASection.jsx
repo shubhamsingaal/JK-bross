@@ -48,7 +48,7 @@ const CTASection = () => {
                                 
                                 <div className='mb-6'>
                                 <label for="phone" className="mt-4 text-md text-gray-400">Phone number</label>
-                                <input type="tel" id="phone" 
+                                <input type="number" id="phone" 
                                     className="bg-gray-50 border-2 text-lg rounded-xl w-full p-2 border-[#D8E3FF]" 
                                     placeholder="+91" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required></input>
                                 </div>
