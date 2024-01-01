@@ -5,6 +5,7 @@ import dottedline from "/assets/dottedline.svg"
 import location from "/assets/Location.svg"
 import fullprogressv from '/assets/fullprogressv.svg'
 import fullprogressh from '/assets/fullprogressh.svg'
+import trackMapDemo from '/assets/trackMapDemo.png'
 
 const steps = [
     { id: 1, value: '', display: 'Arrived at the location', stepComplete: true },
@@ -16,19 +17,21 @@ const steps = [
 
 const OrderOngoing3 = () => {
     return (
-        <div className='flex flex-col'>
+        <div className='overflow-x-hidden'>
             <PackersNav />
             <div className='flex md:flex-row flex-col'>
                 <div className='w-[100svw] mb-7 flex justify-center'>
-                    <div className='lg:w-[70%] w-[90%] mt-[7rem]'>
+                    <div className='lg:w-[70%] w-[%] mt-[1rem]  mx-auto md:mt-[7rem]'>
 
                         <div className='w-[100%] flex gap-x-4 md:flex-row flex-col md:items-start items-center'>
 
-                            <div className='flex flex-wrap gap-4 md:gap-4 w-[65%] md:items-center items-center justify-center md:justify-start md:mt-6'>
-
+                            <div className='md:w-[50%]  flex-1  md:-mt-[3rem] md:mx-[2rem]'>
+                                {/* will be replaced by Map component */}
+                                <img src={trackMapDemo} className='w-[90%] mx-5' />
                             </div>
+                  
                             <div className='w-[40%] min-w-[20rem] mt-[2rem] md:mt-[-4rem]'>
-                                <div className='flex justify-between m-4'>
+                                <div className='flex justify-between mx-4 my-2'>
                                     <h1 className='text-xl font-semibold text-textPrimary font-serif'>Order Tracking</h1>
                                     <div className='flex flex-col'>
                                         <p className='text-right text-xs text-zinc-500'>Status </p>
