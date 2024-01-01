@@ -25,9 +25,9 @@ const OrderOngoing3 = () => {
 
                         <div className='w-[100%] flex gap-x-4 md:flex-row flex-col md:items-start items-center'>
 
-                            <div className='md:w-[50%] flex-3 mx-auto'>
+                            <div className='md:w-[50%]  flex-1  md:-mt-[3rem] md:mx-[2rem]'>
                                 {/* will be replaced by Map component */}
-                                <img src={trackMapDemo} className='' />
+                                <img src={trackMapDemo} className='w-[90%] mx-5' />
                             </div>
                   
                             <div className='w-[40%] min-w-[20rem] mt-[2rem] md:mt-[-4rem]'>
