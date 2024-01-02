@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import cycle from '/assets/group@2x.png';
 import worker from '/assets/worker.png';
 import truck from '/assets/truck.png';
+import scooter from '/assets/scooter.png'
 
 const Slideshow = ({ images, currentIndex }) => {
     return (
@@ -36,15 +37,24 @@ const SignupOne = ({ logoSrc }) => {
     const location = useLocation();
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-    const images = [cycle, worker, truck];
+    const images = [cycle, worker, truck, scooter, worker] ;
 
     useEffect(() => {
         let nextImageIndex = 0;
 
-        if (location.pathname.includes('/verification')) {
+        if (location.pathname.includes('/verification') || location.pathname.includes('/pverification')) {
             nextImageIndex = 1;
-        } else if (location.pathname.includes('/account')) {
+        } else if (location.pathname.includes('/account') || location.pathname.includes('/paccount') ) {
             nextImageIndex = 2;
+        }
+        else if (location.pathname.includes('/psignup')) {
+            nextImageIndex = 0;
+        }
+        else if (location.pathname.includes('/emailscreen')) {
+            nextImageIndex = 3;
+        }
+        else if (location.pathname.includes('/verifyidentity')){
+            nextImageIndex=4;
         }
 
         setCurrentImageIndex(nextImageIndex);
