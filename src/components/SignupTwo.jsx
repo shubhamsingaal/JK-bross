@@ -2,13 +2,16 @@ import React, { useState } from 'react';
 import LogoGoogle from '/assets/icon--google@2x.png';
 import LogoFacebook from '/assets/vector@2x.png';
 import frame from '/assets/Frame.png';
+import { Button, Input } from '../ui';
 
 const SignupTwo = () => {
     const [phoneNumber, setPhoneNumber] = useState('');
     const [selectedCountryCode, setSelectedCountryCode] = useState('');
+    const [isPhoneNumberFilled, setIsPhoneNumberFilled] = useState(false);
 
     const handlePhoneNumberChange = (e) => {
         setPhoneNumber(e.target.value);
+        setIsPhoneNumberFilled(e.target.value !== '');
     };
 
     const handleCountryCodeChange = (e) => {
@@ -16,7 +19,13 @@ const SignupTwo = () => {
     };
 
     const handleNextClick = () => {
-        // Add logic to handle the "Next" button click
+        if (isPhoneNumberFilled) {
+            // Navigate to the verification page
+            window.location.pathname = '/verification';
+        } else {
+            // Show an error or alert indicating that the mobile number is required
+            alert('Mobile number is required');
+        }
     };
 
     const handleGoogleLogin = () => {
@@ -51,12 +60,10 @@ const SignupTwo = () => {
                         className='flex-1  bg-gray-5  ml-1 w-full p-2 border-2 border-[#D8E3FF] rounded-xl text-lg mb-6'
                     />
                 </div>
-                <button onClick={handleNextClick} className='w-full   mb-12 transition duration-300 bg-primary rounded-xl px-1 md:px-2 text-white  p-2 hover:bg-blue-500'>
-                    Next
-                </button>
+                <Button onClick={handleNextClick}>Next</Button>
                 <img src={frame} className='mx-auto mt-12 mb-12 ' alt="" />
                 <button onClick={handleGoogleLogin} className='w-full  mt-5 mb-2 bg-gray-50 text-zinc-400 p-2  rounded-xl flex items-center justify-center hover:bg-gray-200 transition duration-300'>
-                    <img src={LogoGoogle} className='mr-10 h-6'  alt="" />
+                    <img src={LogoGoogle} className='mr-10 h-6' alt="" />
                     Signup with Google
                 </button>
                 <button onClick={handleFacebookLogin} className='w-full  bg-gray-50 text-zinc-400 p-2 rounded-xl flex items-center justify-center hover:bg-gray-200 transition duration-300'>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import account from '/assets/Account.png';
  // import '../css/AccountTwo.css';
+import { Button, Input } from '../ui';
 
 const AccountTwo = () => {
   const [name, setName] = useState('');
@@ -106,13 +107,7 @@ const AccountTwo = () => {
             {/* Add more options as needed */}
           </select>
         </div>
-        <button
-          onClick={handleSubmit}
-          className={`bg-${isAllFieldsFilled ? 'primary' : 'blue-100'} rounded-xl px-1 md:px-2 text-white w-full p-2 hover:bg-${isAllFieldsFilled ? 'blue-500' : 'blue-100'} ${isAllFieldsFilled ? '' : 'cursor-not-allowed'}`}
-          disabled={!isAllFieldsFilled}
-        >
-          Submit
-        </button>
+        <Button  >Submit</Button>
       </div>
     </div>
   );

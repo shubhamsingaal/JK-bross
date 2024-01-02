@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-// import verification from '/assets/Verification.png';
+import { Button, Input } from '../ui';
 
 const VerificationTwo = () => {
     const [otp, setOtp] = useState(['', '', '', '']);
@@ -30,6 +30,17 @@ const VerificationTwo = () => {
 
     const handleSubmit = () => {
         // Add logic to handle the submission of OTP
+
+        // Check if all fields are filled
+        const isAllFieldsFilled = otp.every(value => value !== '');
+
+        // If all fields are filled, navigate to the "/account" page
+        if (isAllFieldsFilled) {
+            window.location.pathname = '/account';
+        } else {
+            // Show an error or alert indicating that all fields must be filled
+            alert('Please fill all OTP fields');
+        }
     };
 
     const handleChangeClick = () => {
@@ -39,8 +50,6 @@ const VerificationTwo = () => {
     const handleResendClick = () => {
         // Add logic for handling "Resend OTP" button click
     };
-
-    const isAllFieldsFilled = otp.every(value => value !== '');
 
     return (
         <div className='flex-1 md:bg-gray-200 bg-white md:p-11 pt-1'>
@@ -86,13 +95,7 @@ const VerificationTwo = () => {
                 </div>
                 <div>
                     {/* Submit button at the bottom */}
-                    <button
-                        onClick={handleSubmit}
-                        className={`w-full p-2 mt-2 md:mt-8 lg:mt-1 xl:mb-12 relative  -bottom-20 rounded-xl transition duration-300 ${isAllFieldsFilled ? 'bg-blue-500 text-white hover:bg-blue-600' : 'bg-blue-100 text-gray-600 cursor-not-allowed '}`}
-                        disabled={!isAllFieldsFilled}
-                    >
-                        Submit
-                    </button>
+                    <Button onClick={handleSubmit}>Submit</Button>
                 </div>
             </div>
         </div>

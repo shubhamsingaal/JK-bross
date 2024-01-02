@@ -70,7 +70,10 @@ const SignupOne = ({ logoSrc }) => {
             />
 
             {/* Slideshow */}
-            <Slideshow images={images} currentIndex={currentImageIndex} />
+            <div className='md:block hidden'>
+                <Slideshow images={images} currentIndex={currentImageIndex} />
+            </div>
+            
 
            
 
