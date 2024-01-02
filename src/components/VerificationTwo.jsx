@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Button, Input } from '../ui';
 
-const VerificationTwo = () => {
+const VerificationTwo = (index) => {
     const [otp, setOtp] = useState(['', '', '', '']);
     const inputRefs = useRef([
         React.createRef(),
@@ -95,7 +95,7 @@ const VerificationTwo = () => {
                 </div>
                 <div>
                     {/* Submit button at the bottom */}
-                    <Button onClick={handleSubmit}>Submit</Button>
+                    <Button onClick={handleSubmit} index={2}>Submit</Button>
                 </div>
             </div>
         </div>

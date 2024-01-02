@@ -9,7 +9,7 @@ const VerificationScreen = () => {
         <div className='flex md:flex-row flex-col'>
 
             <SignupOne logoSrc={logojkbros} />
-            <VerificationTwo />
+            <VerificationTwo path={2} />
 
 
         </div>

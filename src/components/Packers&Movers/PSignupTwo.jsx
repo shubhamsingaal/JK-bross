@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Button } from '../../ui';
 
 const PSignupTwo = () => {
     const [phoneNumber, setPhoneNumber] = useState('');
@@ -42,9 +43,8 @@ const PSignupTwo = () => {
                         className='flex-1  bg-gray-5  ml-1 w-full h-10 p-2 border-2 border-[#D8E3FF] rounded-xl text-lg mb-6'
                     />
                 </div>
-                <button onClick={handleNextClick} className='w-full h-10  mb-12 transition duration-300 bg-primary rounded-3xl px-1 md:px-2 text-white  p-2 hover:bg-blue-500'>
-                    Next
-                </button>
+                
+                <Button  >Next</Button>
                 
             </div>
         </div>
