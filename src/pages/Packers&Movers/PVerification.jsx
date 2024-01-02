@@ -1,14 +1,14 @@
 import React from 'react'
 
 import logojkbros from '/assets/logojkbros.svg'
-import { VerificationTwo , VerificationOne} from '../../components'
+import { VerificationTwo , VerificationOne, SignupOne} from '../../components'
 
 const VerificationScreen = () => {
     return (
 
         <div className='flex md:flex-row flex-col'>
 
-            <VerificationOne logoSrc={logojkbros} />
+            <SignupOne logoSrc={logojkbros} />
             <VerificationTwo />
 
 
