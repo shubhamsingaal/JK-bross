@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import EditProfileComponent from './EditProfileComponent'
-import { CheckOutPreviewModal, Contact, EditProfile, Help, Legal, NotificationComp, PastOrders, Payment } from './comps'
+import { CheckOutPreviewModal, CheckoutModal2, Contact, EditProfile, Help, Legal, NotificationComp, PastOrders, Payment } from './comps'
 import { Button, Modal } from '../../ui'
 
 const profileOptions = [
@@ -70,6 +70,7 @@ const ProfileInfo = () => {
   const SelectedComp = selectedSection && sectionMap[selectedSection]
 
   const [ open, setOpen ] = useState(false)
+  const [open2, setOpen2] =useState(false)
 
   return (
     <div className='w-[100svw] flex justify-center'>
@@ -99,9 +100,20 @@ const ProfileInfo = () => {
                         Open Modal
                     </button>
                     <CheckOutPreviewModal open={open} setOpen={setOpen}/>
+
+            <button
+              type="button"
+              onClick={() => setOpen2(true)}
+              className="rounded-md mx-4 bg-black/20 px-4 py-2 text-sm mt-4 font-medium text-white hover:bg-black/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75"
+            >
+              Open Modal 2
+            </button>
+            
+            <CheckoutModal2 open={open2} setOpen={setOpen2} />
                   
                   </div>
             </div>
+            
         
         </div>
 
