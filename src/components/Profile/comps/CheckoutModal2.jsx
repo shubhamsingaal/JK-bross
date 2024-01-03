@@ -1,14 +1,13 @@
 import React from 'react'
 import { Modal } from '../../../ui'
 import { MapPin, PencilSimple } from 'phosphor-react'
-import visaLogo from '/assets/visa-logo.png';
-import mastercardLogo from '/assets/visa-logo.png';
-import applepayLogo from '/assets/visa-logo.png';
-import googlepayLogo from '/assets/visa-logo.png';
+import visaLogo from '/assets/visa-logo.svg';
+import mastercardLogo from '/assets/Mastercard.svg';
+import applepayLogo from '/assets/ApplePay.svg';
+import googlepayLogo from '/assets/GooglePay.svg';
 
 const CheckoutModal2 = ({ open, setOpen }) => {
-
-
+   
     return (
         <Modal
             open={open}
@@ -16,7 +15,7 @@ const CheckoutModal2 = ({ open, setOpen }) => {
             submitText={"Pay Now"}
             closeText={"Back"}
             size="lg"
-            title="Checkout Preview"
+            title="Checkout"
             onSubmitClick={() => console.log("Hello")}
         >
             <div className='flex border-y-2 border-outline md:flex-row flex-col'>
@@ -32,10 +31,10 @@ const CheckoutModal2 = ({ open, setOpen }) => {
                     {/* Payment details */}
                     <div className='rounded-2xl p-4 my-1 '>
                         <div className="flex gap-4 ">
-                            <img src={visaLogo} alt="Visa" className="w-auto h-auto border-2 border-grey p-4 rounded-xl" />
-                            <img src={mastercardLogo} alt="Mastercard" className="w-auto h-auto border-2 border-grey p-4 rounded-xl" />
-                            <img src={applepayLogo} alt="Apple Pay" className="w-auto h-auto border-2 border-grey p-4 rounded-xl" />
-                            <img src={googlepayLogo} alt="Google Pay" className="w-auto h-auto border-2 border-grey p-4 rounded-xl" />
+                            <img src={visaLogo} alt="Visa" className="w-auto bg-white h-auto border-2 border-blue-400 p-4 rounded-xl" />
+                            <img src={mastercardLogo} alt="Mastercard" className="w-auto  bg-white h-auto border-2 border-grey p-4 rounded-xl" />
+                            <img src={applepayLogo} alt="Apple Pay" className="w-auto bg-white h-auto border-2 border-grey p-4 rounded-xl" />
+                            <img src={googlepayLogo} alt="Google Pay" className="w-auto bg-white h-auto border-2 border-grey p-4 rounded-xl" />
                         </div>
 
 
@@ -45,20 +44,20 @@ const CheckoutModal2 = ({ open, setOpen }) => {
                    
                     <div className=' border-outline rounded-2xl p-4 my-4 flex flex-col gap-y-4'>
                         <label htmlFor="cardNumber" className="text-xs -m-3 mx-1">Card Number</label>
-                        <input type="text" id="cardNumber" placeholder="•••• •••• •••• 6522" className="border text-xs p-2 rounded-xl" />
+                        <input type="text" id="cardNumber" placeholder="**** **** **** 4521" className="border text-xs p-2.5 rounded-xl" />
 
                         <label htmlFor="cardName" className="text-xs mt-2 -m-3 mx-1">Name</label>
-                        <input type="text" id="cardName" placeholder="Dhruvil Jogiwala" className="border text-xs p-2 rounded-xl" />
+                        <input type="text" id="cardName" placeholder="Dhruvil Jogiwala" className="border text-xs p-2.5 rounded-xl" />
 
-                        <div className="flex gap-2 mt-2">
+                        <div className=" md:flex gap-2 mt-2">
                             <div className="flex flex-col">
                                 <label htmlFor="expirationDate" className="text-xs mb-1 mx-1">Expiration date</label>
-                                <input type="text" id="expirationDate" placeholder="05/24" className="border text-xs p-2 rounded-xl" />
+                                <input type="text" id="expirationDate" placeholder="05/24" className="border text-xs p-2.5 rounded-xl" />
                             </div>
                             
-                            <div className="flex flex-col">
+                            <div className="flex flex-col mt-4 md:mt-0">
                                 <label htmlFor="cvv" className="text-xs mb-1 mx-1">CVV</label>
-                                <input type="text" id="cvv" placeholder="•••" className="border text-xs p-2 rounded-xl" />
+                                <input type="text" id="cvv" placeholder="***" className="border text-xs p-2.5 rounded-xl" />
                             </div>
                             
                         </div>
